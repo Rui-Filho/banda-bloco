@@ -74,7 +74,7 @@ header > h1 {
     cursor: pointer;
     color: var(--cor0);
     margin: auto;
-    margin-bottom: 20px;
+    margin-bottom: 19px;
     font-family: var(--fonte-destaque);
     display: block;
   }
