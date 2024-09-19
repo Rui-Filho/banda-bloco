@@ -16,17 +16,17 @@
         <img src="imagens/logobloco24.png" alt="Logo da Bloco">
     </header>
 
-    <nav>
-        <a href="#">Sobre</a>
-        <a href="#">Música</a>        
-        <a href="#">Contato </a>
-        <a href="#">PressKit/Imprensa </a>
-        <a href="#">Instagram</a>
-        <a href="#">Facebook</a>
-        
-        
-         
+
+    <button class="menu-btn" onclick="toggleMenu()">☰ Menu</button>
+    <nav id="menu">
+     <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">Sobre</a></li>
+    <li><a href="#music">Música</a></li>
+    <li><a href="#contact">Contato</a></li>
+     </ul>
     </nav>
+
 
     <main>
 
@@ -163,6 +163,16 @@
     </footer>
 
 
+    <script>
+
     
+    function toggleMenu() {
+     const menu = document.getElementById('menu');
+    menu.classList.toggle('active');
+}
+
+
+
+    </script>
 </body>
 </html>
