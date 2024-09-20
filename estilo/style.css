@@ -88,7 +88,7 @@ header > h1 {
   
     #menu.active {
       display: flex;
-      
+          
        
     }
   
@@ -99,8 +99,7 @@ header > h1 {
     max-width: 870px;
     min-width: 290px;
     padding: 20px;        
-    height: 100px; 
-    margin: auto;
+    height:125px;     
     text-align: center;    
     text-decoration: none;
     padding: 1px;
