@@ -12,7 +12,7 @@
 </head>
 <body>
     <header>
-        <h1>BLOCO</h1>
+        <h1 id="home">BLOCO</h1>
         <img src="imagens/logobloco24.png" alt="Logo da Bloco">
     </header>
 
@@ -32,7 +32,7 @@
 
         <article>
 
-            <h1>SOBRE A BANDA</h1>
+            <h1 id="about">SOBRE A BANDA</h1>
             
             <picture>
                 <source media="(max-width:400px )" srcset="imagens/bloco700.jpg">
@@ -71,7 +71,7 @@
                     <hr>
 
 
-            <h1>MÚSICA</h1>
+            <h1 id="music">MÚSICA</h1>
             <h2>Discografia:</h2>   
             <h3>EP "Buzinas & Androides" (2016)</h3> 
             
@@ -144,7 +144,7 @@
 
             <hr>
 
-            <h1>CONTATO </h1>
+            <h1 id="contact">CONTATO </h1>
             <p class="final"> Email: blocorock@gmail.com <br>
                 (51) 996648879 <br>
                 (51) 985245928 
@@ -164,6 +164,17 @@
 
 
     <script>
+
+   
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
 
     
     function toggleMenu() {
