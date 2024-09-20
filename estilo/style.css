@@ -96,7 +96,8 @@ header > h1 {
        
   nav{
     background-color: var(--cor4);
-    width: 870px;
+    max-width: 870px;
+    min-width: 290px;
     padding: 20px;        
     height: 100px; 
     margin: auto;
