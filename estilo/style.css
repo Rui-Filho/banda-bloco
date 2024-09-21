@@ -68,7 +68,7 @@ header > h1 {
 
   
   .menu-btn {
-    font-size: 24px;
+    font-size: 22px;
     background: none;
     border: none;
     cursor: pointer;
@@ -95,7 +95,8 @@ header > h1 {
   
        
   nav{
-    background-color: var(--cor4);
+    --cor3:#0D0B07;
+    background-image: linear-gradient(to bottom,#262118,#0D0B07,#0D0B07,#262118);
     max-width: 870px;
     min-width: 290px;
     padding: 20px;        
@@ -105,7 +106,7 @@ header > h1 {
     padding: 1px;
     font-weight: bold;
     transition-duration: 0.5s;
-    font-family: var(--fonte-bloco);
+    font-family: var(--fonte-destaque);
     border-radius: 15px; 
     margin: auto;
     text-align: center;
@@ -116,14 +117,15 @@ header > h1 {
 a{
     color:var(--cor0);
     text-decoration: none;
-    padding: 1px;
+    padding: 4px;
     font-weight: normal;
     transition-duration: 0.5s;
-    font-family: var(--fonte-bloco);
+    font-family: var(--fonte-destaque);
     border-radius: 15px; 
     margin: auto;
     text-align: center;
     line-height: 25px;
+    font-size: 0.8em;
     
     }
 
@@ -134,6 +136,44 @@ a:hover{
         padding: 5px;
         color: #262118;
     }
+
+
+    
+.carousel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .carousel-item {
+    display: none;
+  }
+  
+  .carousel-item.active {
+    display: block;
+  }
+
+  main img.carousel-item.active{
+    width: 100%;
+}
+
+
+.carousel-control {
+    color:var(--cor0);
+    background-color:#0D0B07;
+    margin: auto;
+    display: block;
+    font-size: 0.6em;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 10px;
+    border: #262118;    
+    font-family: var(--fonte-destaque);   
+    
+
+}
+
+
 
 main{
     min-width: 320px;
@@ -154,9 +194,7 @@ main{
 
 }
 
-main img.img{
-    width: 100%;
-}
+
 
 main h1{
     color:var(--cor4);
@@ -305,6 +343,25 @@ div.video > iframe{
     height: 90%;
 
 }
+
+.img4 {
+    width: 6%;  
+    display: inline; 
+    margin: auto;
+    margin: 20px;
+    padding-left: 20px;  
+    
+      
+    
+}
+
+.redes{
+    margin-left: 90px;
+    display: inline;
+    text-align: center;
+}
+
+
 
 footer{
     background-color: var(--cor4);

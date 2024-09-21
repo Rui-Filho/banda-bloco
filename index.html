@@ -24,7 +24,7 @@
     <li><a href="#about">Sobre</a></li>
     <li><a href="#music">Música</a></li>
     <li><a href="#contact">Contato</a></li>
-    <li><a href="#video">Vídeos</a></li>
+    <li><a href="#video">Vídeos</a></li>   
      </ul>
     </nav>
 
@@ -34,11 +34,23 @@
         <article>
 
             <h1 id="about">SOBRE A BANDA</h1>
+
             
-            <picture>
-                <source media="(max-width:400px )" srcset="imagens/bloco700.jpg">
-            <img src="imagens/bloco1200.jpg" class="img" alt="Foto da banda Bloco.">
-        </picture>
+            <div class="carousel">
+            <img src="imagens/carbloco1.jpg" class="carousel-item active">
+            <img src="imagens/carbloco2.jpg" class="carousel-item">
+            <img src="imagens/carbloco3.jpg" class="carousel-item">
+            <img src="imagens/carbloco4.jpg" class="carousel-item">
+            <img src="imagens/carbloco5.jpg" class="carousel-item">
+            <img src="imagens/carbloco6.jpg" class="carousel-item">
+            <br>
+           
+            </div>
+            <button class="carousel-control prev" onclick="changeSlide(-1)">&#10094; Anterior </button><br>
+            <button class="carousel-control next" onclick="changeSlide(1)"> &#10095; Próxima</button>
+  
+            
+            
             
 
             <p>A <strong><a href="https://open.spotify.com/intl-pt/artist/61NpogMXTmONjdzinpmX4N?si=S6VjZpGsSgaMe3uwJk9ilA&nd=1&dlsi=9b768beb77664dae" target="_blank">bloco</a></strong> é uma banda de rock alternativo onde a sonoridade flutua entre a suavidade do
@@ -139,9 +151,17 @@
 
             <hr>
 
-            <h1>GALERIA DE FOTOS </h1>
-            <img src="" alt="">
-            <img src="" alt="">
+            <h1>REDES SOCIAIS</h1>
+            <p class="final">Acompanhe a banda nas redes sociais:</p>
+
+            <div class="redes">           
+            <img src="imagens/instagram.png" class="img4"
+             alt="logo instagram">
+            <img src="imagens/youtube.png" class="img4" alt="logo youtube">
+            <img src="imagens/logotipo-spotify.png" class="img4"alt="logo spotify">
+            <img src="imagens/facebook.png" class="img4"alt="logo facebook">
+            </div> 
+            
 
             <hr>
 
@@ -165,6 +185,20 @@
 
 
     <script>
+
+
+        
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.carousel-item');
+
+    function changeSlide(direction) {
+    slides[currentSlide].classList.remove('active');
+    currentSlide = (currentSlide + direction + slides.length) % slides.length;
+    slides[currentSlide].classList.add('active');
+}
+
+document.onload = changeSlide(0);
+
 
    
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
