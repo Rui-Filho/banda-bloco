@@ -43,7 +43,7 @@ body{
 }
 
 header{
-    background-color: var(--cor3);
+    background-image: linear-gradient(to bottom,var(--cor3), var(--cor3), var(--cor3), var(--cor3),  #110f0b);
     min-height: 100px;
     text-align: center;
     padding-top: 15px;
