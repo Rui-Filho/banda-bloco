@@ -32,6 +32,7 @@
 header > img{
     display: block;
     margin: auto;
+    max-width: 100px;
     
     
 }
@@ -58,7 +59,7 @@ header > h1 {
        padding-top: 10px ;
        font-size:3em ;
        font-weight: lighter;
-       text-shadow: 2px 2px 0px var(--cor4)}
+       text-shadow: 1px 1px 0px var(--cor4)}
 
 
 
@@ -151,6 +152,7 @@ a:hover{
   
   .carousel-item.active {
     display: block;
+    border: 1px solid var(--cor2);
   }
 
   main img.carousel-item.active{
@@ -183,8 +185,7 @@ main{
     padding: 10px;
     box-shadow: 0px  0px   10px   var(--cor1);
     margin-bottom: 50px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px
+    border-radius: 10px;
 }
 
 .p1{
@@ -202,15 +203,16 @@ main h1{
     font-weight: bold;
     padding: 10px;
     margin: 40px;
-    font-size: 1.4em;  
+    font-size: 1.3em;  
     text-align: center; 
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.164);
     
 }
 
 main h2{
     color: var(--cor4);
     font-family: var(--fonte-bloco);
-    font-size: 1.1em;    
+    font-size: 1.5em;    
     text-indent: 1px;
     font-weight: normal;
     margin-bottom: 50px;
@@ -222,7 +224,7 @@ main h2{
 main h3{
     color: var(--cor4);
     font-family: var(--fonte-destaque);
-    font-size: 1.1em;    
+    font-size: 0.8em;    
     text-indent: 4px;
     font-weight: normal;
     text-align: center;
@@ -321,7 +323,8 @@ main a:hover{
 main img.img2{
     display: block;
     margin: auto;
-    padding: 20px;
+    padding: 2px;
+    border: 1px solid #262118;
     
 
 }
@@ -345,21 +348,18 @@ div.video > iframe{
 }
 
 .img4 {
-    width: 6%;  
-    display: inline; 
+    max-width: 40px;  
+    display: flex; 
     margin: auto;
-    margin: 20px;
-    padding-left: 20px;  
+    padding: 10px;
+  
+    
     
       
     
 }
 
-.redes{
-    margin-left: 90px;
-    display: inline;
-    text-align: center;
-}
+
 
 
 
