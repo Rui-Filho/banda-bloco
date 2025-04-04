@@ -92,6 +92,20 @@ header > h1 {
           
        
     }
+
+
+    section{
+        background-color: #595856;
+        background-image: url(../imagens/blocoparalax.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+        height: 100vh;
+        background-position:  center bottom;
+
+        
+
+
+    }
   
   
        
