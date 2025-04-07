@@ -45,6 +45,7 @@ body{
 
 header{
     background-image: linear-gradient(to bottom,var(--cor3), var(--cor3), var(--cor3), var(--cor3),  #110f0b);
+    
     min-height: 100px;
     text-align: center;
     padding-top: 15px;
@@ -96,7 +97,7 @@ header > h1 {
 
     section{
         background-color: #595856;
-        background-image: url(../imagens/blocoparalax.jpg);
+        background-image: url(../imagens/IMG_2616.jpg);
         background-size: cover;
         background-attachment: fixed;
         height: 80vh;
