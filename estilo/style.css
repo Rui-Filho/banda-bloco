@@ -99,8 +99,10 @@ header > h1 {
         background-image: url(../imagens/blocoparalax.jpg);
         background-size: cover;
         background-attachment: fixed;
-        height: 100vh;
-        background-position:  center center;
+        height: 80vh;
+        
+
+        background-position:  center top;
 
         
 
