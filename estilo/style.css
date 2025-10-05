@@ -37,6 +37,12 @@ header > img{
     
 }
 
+header > p{
+    color: #D9D9D9;
+    
+    
+}
+
 
 body{  
     background-color: var(--cor3);
