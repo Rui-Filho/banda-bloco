@@ -1,81 +1,88 @@
-
+/* ===========================
+   IMPORTAÇÕES E FONTES
+=========================== */
 
 @import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 @font-face {
     font-family: 'aldith';
     src: url(../fontes/aldith.ttf) format('truetype');
-    font-weight:normal;
+    font-weight: normal;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+/* ===========================
+   VARIÁVEIS
+=========================== */
 
-
-:root{
-    --cor0:#D9D9D9 ;
+:root {
+    --cor0: #D9D9D9;
     --cor1: #595856;
-    --cor2:#8C8B88;
-    --cor3:#0D0B07;
-    --cor4:#262118 ;    
+    --cor2: #8C8B88;
+    --cor3: #0D0B07;
+    --cor4: #262118;
 
-    --fonte-padrao:"Inter", sans-serif;    
+    --fonte-padrao: "Inter", sans-serif;
     --fonte-destaque: "Bruno Ace", sans-serif;
     --fonte-bloco: 'aldith', sans-serif;
 }
 
+/* ===========================
+   RESET
+=========================== */
+
 * {
-    margin: 0px;
-    padding: 0px;
-}
-
-header > img{
-    display: block;
-    margin: auto;
-    max-width: 100px;
-    
+    margin: 0;
+    padding: 0;
     
 }
 
-header > p{
-    color: #D9D9D9;
-    
-    
-}
+/* ===========================
+   BODY
+=========================== */
 
-
-body{  
+body {
     background-color: var(--cor3);
     font-family: var(--fonte-padrao);
 }
 
-header{
-    background-image: linear-gradient(to bottom,var(--cor3), var(--cor3), var(--cor3), var(--cor3),  #110f0b);
-    
+/* ===========================
+   HEADER
+=========================== */
+
+header {
+    background-color:#0D0B07;
     min-height: 100px;
+    width: 100vw;
     text-align: center;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    
+    padding: 2px;
+}
+
+header > img {
+    display: block;
+    margin: auto;
+    max-width: 80px;
+}
+
+header > p {
+    color: var(--cor0);
 }
 
 header > h1 {
     color: var(--cor0);
-    font-family:var(--fonte-bloco);
-       margin-bottom:  1px;
-       padding-top: 10px ;
-       font-size:3em ;
-       font-weight: lighter;
-       text-shadow: 1px 1px 0px var(--cor4)}
+    font-family: var(--fonte-bloco);
+    margin-bottom: 1px;
+    padding-top: 10px;
+    font-size: 3em;
+    font-weight: lighter;
+    text-shadow: 1px 1px 0px var(--cor4);
+}
 
+/* ===========================
+   MENU
+=========================== */
 
-
-
-
-    
-
-  
-  .menu-btn {
+.menu-btn {
     font-size: 22px;
     background: none;
     border: none;
@@ -85,215 +92,223 @@ header > h1 {
     margin-bottom: 19px;
     font-family: var(--fonte-destaque);
     display: block;
-  }
-  
-  
-    #menu {
-      display: none;
-      flex-direction: column;
-      
-    }
-  
-    #menu.active {
-      display: flex;
-          
-       
-    }
+}
 
+#menu {
+    display: none;
+    flex-direction: column;
+}
 
-    section{
-        background-color: #595856;
-        background-image: url(../imagens/para25.jpg);
-        background-size: cover;
-        background-attachment: fixed;
-        height: 80vh;
-        
+#menu.active {
+    display: flex;
+}
 
-        background-position:  center top;
+/* ===========================
+   SEÇÃO DE CAPA
+=========================== */
 
-        
+section {
+    background-color: #595856;
+    background-image: url(../imagens/para25.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 80vh;
+    background-position: center top;
+}
 
+/* ===========================
+   NAV
+=========================== */
 
-    }
-  
-  
-       
-  nav{
-    --cor3:#0D0B07;
-    background-image: linear-gradient(to bottom,#262118,#0D0B07,#0D0B07,#262118);
+nav {
+    background-image: linear-gradient(to bottom, #262118, #0D0B07, #0D0B07, #262118);
     max-width: 870px;
     min-width: 290px;
-    padding: 20px;        
-    height:125px;     
-    text-align: center;    
-    text-decoration: none;
-    padding: 1px;
+    padding: 20px 1px;
+    height: 125px;
+    text-align: center;
     font-weight: bold;
     transition-duration: 0.5s;
     font-family: var(--fonte-destaque);
-    border-radius: 15px; 
+    border-radius: 15px;
     margin: auto;
-    text-align: center;
+}
 
-}       
+/* ===========================
+   LINKS
+=========================== */
 
-
-a{
-    color:var(--cor0);
+a {
+    color: var(--cor0);
     text-decoration: none;
     padding: 4px;
     font-weight: normal;
     transition-duration: 0.5s;
     font-family: var(--fonte-destaque);
-    border-radius: 15px; 
-    margin: auto;
+    border-radius: 15px;
     text-align: center;
     line-height: 25px;
     font-size: 0.8em;
-    
-    }
+}
 
+a:hover {
+    background-color: var(--cor0);
+    color: var(--cor4);
+    padding: 5px;
+}
 
-a:hover{
-        background-color:var(--cor0);
-        border-radius: 15px;            
-        padding: 5px;
-        color: #262118;
-    }
+/* ===========================
+   CARROSSEL
+=========================== */
 
-
-    
 .carousel {
     position: relative;
     width: 100%;
     overflow: hidden;
-  }
-  
-  .carousel-item {
+}
+
+.carousel-item {
     display: none;
-  }
-  
-  .carousel-item.active {
+}
+
+.carousel-item.active {
     display: block;
     border: 1px solid var(--cor2);
-  }
+}
 
-  main img.carousel-item.active{
+main img.carousel-item.active {
     width: 100%;
 }
 
-
 .carousel-control {
-    color:var(--cor0);
-    background-color:#0D0B07;
+    color: var(--cor0);
+    background-color: var(--cor3);
     margin: auto;
     display: block;
     font-size: 0.6em;
     cursor: pointer;
     padding: 5px;
     border-radius: 10px;
-    border: #262118;    
-    font-family: var(--fonte-destaque);   
-    
-
+    border: 1px solid var(--cor4);
+    font-family: var(--fonte-destaque);
 }
 
+/* ===========================
+   MAIN
+=========================== */
 
-
-main{
+main {
     min-width: 320px;
     max-width: 850px;
     margin: auto;
-    background-color:#D9D9D9;
+    background-color: var(--cor0);
     padding: 10px;
-    box-shadow: 0px  0px   10px   var(--cor1);
+    box-shadow: 0px 0px 10px var(--cor1);
     margin-bottom: 50px;
     border-radius: 10px;
 }
 
-.p1{
-    text-align: center;
-    font-family: var(--fonte-destaque);
-    font-size: 0.8em;
-
-}
-
-
-
-main h1{
-    color:var(--cor4);
+main h1 {
+    color: var(--cor4);
     font-family: var(--fonte-destaque);
     font-weight: bold;
     padding: 10px;
     margin: 40px;
-    font-size: 1.3em;  
-    text-align: center; 
+    font-size: 1.3em;
+    text-align: center;
     text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.164);
-    
 }
 
-main h2{
+main h2 {
     color: var(--cor4);
     font-family: var(--fonte-bloco);
-    font-size: 1.5em;    
-    text-indent: 1px;
+    font-size: 1.5em;
     font-weight: normal;
-    margin-bottom: 50px;
-    margin-top: 50px;
+    margin: 50px 0;
     text-align: center;
-
 }
 
-main h3{
+main h3 {
     color: var(--cor4);
     font-family: var(--fonte-destaque);
-    font-size: 0.8em;    
-    text-indent: 4px;
+    font-size: 0.8em;
     font-weight: normal;
     text-align: center;
-    margin-bottom: 20px;
-    margin-top: 20px;
+    margin: 20px 0;
 }
 
-
-
-
-
-main p{
+main p {
     color: var(--cor3);
     margin: 15px;
     text-align: justify;
     text-indent: 15px;
     line-height: 2em;
     font-size: 1em;
-    font-family:var(--fonte-padrao) ;
-    
 }
 
-main strong{
-    color:var(--cor4);
-    font-weight:bold ;
+main strong {
+    color: var(--cor4);
+    font-weight: bold;
 }
 
-main a{
+main a {
     text-decoration: none;
     font-weight: bold;
-    color: #262118;
+    color: var(--cor4);
     background-color: var(--cor0);
-    padding: 1px 1px;
+    padding: 1px 3px;
     margin: 1px;
     border-radius: 10px;
-    
-    
-    
 }
 
-.are{
+main a:hover {
+    text-decoration: underline;
+    color: var(--cor3);
+}
+
+main img.img2 {
+    display: block;
+    margin: auto;
+    padding: 2px;
+    border: 1px solid var(--cor4);
+}
+
+/* ===========================
+   VÍDEO RESPONSIVO
+=========================== */
+
+div.video {
+    background-color: var(--cor3);
+    margin: 0 -20px 30px -20px;
+    padding: 20px;
+    position: relative;
+    padding-bottom: 59%;
+}
+
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+/* ===========================
+   ELEMENTOS ESPECIAIS
+=========================== */
+
+.p1 {
+    text-align: center;
+    font-family: var(--fonte-destaque);
+    font-size: 0.8em;
+}
+
+.are {
     font-size: 1.5em;
     font-family: var(--fonte-destaque);
 }
 
-.so{
+.so {
     font-family: var(--fonte-destaque);
     background-color: var(--cor0);
     color: var(--cor4);
@@ -307,105 +322,55 @@ main a{
     text-align: center;
 }
 
-.espetacular{
-    margin-top: 150px;
-}
-
-.so:hover{
-    font-family: var(--fonte-destaque);
+.so:hover {
     background-color: var(--cor3);
     color: var(--cor0);
-    width: 270px;
-    height: 20px;
-    padding: 10px;
-    margin: auto;
-    border-radius: 7px;
     border: solid 2px white;
-    margin-bottom: 40px;
-    text-align: center;
     text-decoration: underline;
 }
 
-.final{
+.espetacular {
+    margin-top: 150px;
+}
+
+.final {
     text-align: center;
     font-family: var(--fonte-destaque);
     font-size: 0.8em;
 }
 
-.nome{
+.nome {
     margin-top: 100px;
-
-}
-
-
-main a:hover{
-    text-decoration: underline;
-    color:#0D0B07;    
-}
-
-main img.img2{
-    display: block;
-    margin: auto;
-    padding: 2px;
-    border: 1px solid #262118;
-    
-
-}
-
-
-div.video{
-    background-color: var(--cor3);   
-    margin:0px -20px 30px -20px;
-    padding: 20px;
-    position: relative;
-    padding-bottom: 59%;
-}
-
-div.video > iframe{
-    position: absolute;
-    top: 5%;
-    left: 5%;
-    width: 90%;
-    height: 90%;
-
 }
 
 .img4 {
-    max-width: 40px;  
-    display: flex; 
+    max-width: 40px;
+    display: flex;
     margin: auto;
     padding: 10px;
-  
-    
-    
-      
-    
 }
 
+/* ===========================
+   FOOTER
+=========================== */
 
-
-
-
-footer{
+footer {
     background-color: var(--cor4);
     color: var(--cor0);
     text-align: center;
     font-size: 0.7em;
     padding: 10px;
-    margin: 1px;
     font-family: var(--fonte-bloco);
 }
 
-footer > p > a{
-    color:var(--cor0);
+footer > p > a {
+    color: var(--cor0);
     font-weight: bolder;
     text-decoration: none;
 }
 
-footer > p > a:hover{
+footer > p > a:hover {
     text-decoration: underline;
     color: var(--cor1);
     font-size: 1.4em;
 }
-
-
