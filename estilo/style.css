@@ -16,7 +16,7 @@
 =========================== */
 
 :root {
-    --cor0: #D9D9D9;
+    --cor0: #ff5555;
     --cor1: #595856;
     --cor2: #8C8B88;
     --cor3: #0D0B07;
@@ -108,12 +108,13 @@ header > h1 {
 =========================== */
 
 section {
-    background-color: #595856;
-    background-image: url(../imagens/para25.jpg);
+    background-color: black;
+    background-image: url(../imagens/cinza2.jpg);
     background-size: cover;
     background-attachment: fixed;
-    height: 80vh;
+    height: 100vh;
     background-position: center top;
+    width: 100%;
 }
 
 /* ===========================
@@ -121,7 +122,7 @@ section {
 =========================== */
 
 nav {
-    background-image: linear-gradient(to bottom, #262118, #0D0B07, #0D0B07, #262118);
+    background-color: #0D0B07;
     max-width: 870px;
     min-width: 290px;
     padding: 20px 1px;
@@ -130,8 +131,9 @@ nav {
     font-weight: bold;
     transition-duration: 0.5s;
     font-family: var(--fonte-destaque);
-    border-radius: 15px;
+    border-radius: 5px;
     margin: auto;
+    transition: 0.3s;
 }
 
 /* ===========================
