@@ -6,29 +6,41 @@
     <title>Bloco</title>
     <link rel="shortcut icon" href="imagens/favicon2.png" type="image/x-icon">
     <link rel="stylesheet" href="estilo/style.css">
+    <link rel="stylesheet" href="estilo/media-query.css">
     
     
     
 </head>
 <body>
     <header>
-        <h1 id="home">BLOCO</h1>        
+        <h1 id="home">BLOCO</h1>     
         <img src="imagens/logobloco25.png" alt="Logo da Bloco">
+        <div class="redestop">           
+            <a href="https://www.instagram.com/blocorock/" target="_blank">
+                <img src="imagens/instagram.png" class="img4top"
+                 alt="logo instagram">
+            </a>
+            <a href="https://www.youtube.com/@blocorock" target="_blank"><img src="imagens/youtube.png" class="img4top" alt="logo youtube"></a>
+            <a href="https://open.spotify.com/intl-pt/artist/61NpogMXTmONjdzinpmX4N?si=S6VjZpGsSgaMe3uwJk9ilA&nd=1&dlsi=9b768beb77664dae" target="_blank"><img src="imagens/logospotfy.png" class="img4top"alt="logo spotify"></a>
+            <a href="https://www.facebook.com/profile.php?id=100071034903229&locale=pt_BR" target="_blank"><img src="imagens/facebook.png" class="img4top"alt="logo facebook"></a>
+            </div> 
+        
+        <button class="menu-btn" onclick="toggleMenu()">☰</button>
     </header>
 
-
-    <button class="menu-btn" onclick="toggleMenu()">☰ Menu</button>
+    
     <nav id="menu">
      <ul>
     <li><a href="#home">Home</a></li>
     <li><a href="#about">Sobre</a></li>
     <li><a href="#music">Música</a></li>    
     <li><a href="#video">Vídeos</a></li>   
-    <li><a href="#contact">Redes Sociais / Contato</a></li>
+    <li><a href="#redesso">Redes Sociais</a></li>
+    <li><a href="#contact">Contatos</a></li>
      </ul>
     </nav>
 
-    <section>
+    <section id="paralax">
         
     </section>
 
@@ -158,7 +170,7 @@
 
             <hr>
 
-            <h1 id="contact">REDES SOCIAIS / CONTATO</h1>
+            <h1 id="redesso">REDES SOCIAIS</h1>
             <p class="final">Acompanhe a banda nas redes sociais:</p>
 
             <div class="redes">           
@@ -167,14 +179,14 @@
                  alt="logo instagram">
             </a>
             <a href="https://www.youtube.com/@blocorock" target="_blank"><img src="imagens/youtube.png" class="img4" alt="logo youtube"></a>
-            <a href="https://open.spotify.com/intl-pt/artist/61NpogMXTmONjdzinpmX4N?si=S6VjZpGsSgaMe3uwJk9ilA&nd=1&dlsi=9b768beb77664dae" target="_blank"><img src="imagens/logotipo-spotify.png" class="img4"alt="logo spotify"></a>
+            <a href="https://open.spotify.com/intl-pt/artist/61NpogMXTmONjdzinpmX4N?si=S6VjZpGsSgaMe3uwJk9ilA&nd=1&dlsi=9b768beb77664dae" target="_blank"><img src="imagens/logospotfy.png" class="img4"alt="logo spotify"></a>
             <a href="https://www.facebook.com/profile.php?id=100071034903229&locale=pt_BR" target="_blank"><img src="imagens/facebook.png" class="img4"alt="logo facebook"></a>
             </div> 
             
 
             
 
-           
+           <h1 id="contact">Contatos</h1>
             <p class="final"> Email: blocorock@gmail.com <br>
                 (51) 996648879 <br>
                 (51) 985245928 
@@ -189,7 +201,7 @@
     </main>
 
     <footer>
-        <p>Site criado por <a href="https://www.instagram.com/rui.reinehr?igsh=d3Bhd3N4OWxiZjd0" target="_blank">Rui Reinehr Filho</a></p>
+        <p>Site criado por <a href="https://www.instagram.com/rui.reinehr?igsh=d3Bhd3N4OWxiZjd0" target="_blank">@ruidabloco</a></p>
     </footer>
 
 
@@ -198,18 +210,18 @@
 
       
 
-document.onload = changeSlide(0);
+window.addEventListener("load", () => {
+    changeSlide(0);
+});
 
-
-   
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
         });
+    });
+});
 
 
     

@@ -18,8 +18,8 @@
 :root {
     --cor0: #ff5555;
     --cor1: #595856;
-    --cor2: #8C8B88;
-    --cor3: #0D0B07;
+    --cor2: white;
+    --cor3: #000000;
     --cor4: #262118;
 
     --fonte-padrao: "Inter", sans-serif;
@@ -34,6 +34,7 @@
 * {
     margin: 0;
     padding: 0;
+    
     
 }
 
@@ -51,31 +52,42 @@ body {
 =========================== */
 
 header {
-    background-color:#0D0B07;
+    background-color:#000000;    
     min-height: 100px;
     width: 100vw;
     text-align: center;
-    padding: 2px;
+    padding: 1px;
+    display: flexbox;
 }
 
 header > img {
-    display: block;
-    margin: auto;
-    max-width: 80px;
+    display: inline-block;    
+    max-width: 47px;
 }
 
-header > p {
-    color: var(--cor0);
+header > img:hover{
+    max-width: 55px;
+    transition: 1.5s;
 }
+
+
 
 header > h1 {
     color: var(--cor0);
     font-family: var(--fonte-bloco);
-    margin-bottom: 1px;
-    padding-top: 10px;
-    font-size: 3em;
+    margin-bottom: 5px;
+    padding-top: 5px;
+    font-size: 1em;
     font-weight: lighter;
     text-shadow: 1px 1px 0px var(--cor4);
+}
+
+.img4top {
+    max-width: 20px;
+    display: inline-block;
+    margin: auto;
+    padding: 10px;
+    
 }
 
 /* ===========================
@@ -83,65 +95,74 @@ header > h1 {
 =========================== */
 
 .menu-btn {
-    font-size: 22px;
+    font-size: 25px;
     background: none;
     border: none;
     cursor: pointer;
     color: var(--cor0);
-    margin: auto;
-    margin-bottom: 19px;
-    font-family: var(--fonte-destaque);
+    
     display: block;
+    margin: auto;  
+    margin-bottom: 10px;
+    font-family: var(--fonte-destaque);
+    transition: .5s;
+    
 }
 
 #menu {
     display: none;
     flex-direction: column;
+    transition: .5s;
 }
 
 #menu.active {
     display: flex;
+    transition: .5s;
 }
 
 /* ===========================
    SEÇÃO DE CAPA
 =========================== */
 
-section {
-    background-color: black;
-    background-image: url(../imagens/cinza2.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-    height: 100vh;
-    background-position: center top;
-    width: 100%;
-}
+
 
 /* ===========================
    NAV
 =========================== */
 
 nav {
-    background-color: #0D0B07;
-    max-width: 870px;
-    min-width: 290px;
+    background-color:#000000;  
+    width: 100vw;
     padding: 20px 1px;
     height: 125px;
     text-align: center;
     font-weight: bold;
     transition-duration: 0.5s;
-    font-family: var(--fonte-destaque);
-    border-radius: 5px;
+    font-family: var(--fonte-padrao);
+    border-radius: 2px;
     margin: auto;
     transition: 0.3s;
+    padding-bottom: 75px;
 }
+
+nav > ul > li{
+    padding: 1px;
+    margin-bottom: 5px;
+    font-size: 1em;
+
+}
+
+
 
 /* ===========================
    LINKS
 =========================== */
 
+
+ 
+
 a {
-    color: var(--cor0);
+    color: var(--cor2);
     text-decoration: none;
     padding: 4px;
     font-weight: normal;
@@ -154,9 +175,11 @@ a {
 }
 
 a:hover {
-    background-color: var(--cor0);
-    color: var(--cor4);
-    padding: 5px;
+    background-color: var(--cor3);
+    color: var(--cor0);
+    padding: 8px;
+    transition: .6s;
+    
 }
 
 /* ===========================
@@ -203,27 +226,27 @@ main {
     min-width: 320px;
     max-width: 850px;
     margin: auto;
-    background-color: var(--cor0);
+    background-color: var(--cor3);
     padding: 10px;
-    box-shadow: 0px 0px 10px var(--cor1);
+    box-shadow: 0px 0px 10px var(--cor4);
     margin-bottom: 50px;
     border-radius: 10px;
 }
 
 main h1 {
-    color: var(--cor4);
-    font-family: var(--fonte-destaque);
-    font-weight: bold;
-    padding: 10px;
-    margin: 40px;
-    font-size: 1.3em;
-    text-align: center;
-    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.164);
+    color: var(--cor2);
+    font-family: var(--fonte-padrao);
+    font-weight: lighter;
+    padding: 2px;
+    margin: 20px;
+    font-size: 0.9em;
+    text-align: left;
+    
 }
 
 main h2 {
-    color: var(--cor4);
-    font-family: var(--fonte-bloco);
+    color: var(--cor2);
+    font-family: var(--fonte-padrao);
     font-size: 1.5em;
     font-weight: normal;
     margin: 50px 0;
@@ -231,7 +254,7 @@ main h2 {
 }
 
 main h3 {
-    color: var(--cor4);
+    color: var(--cor2);
     font-family: var(--fonte-destaque);
     font-size: 0.8em;
     font-weight: normal;
@@ -240,32 +263,32 @@ main h3 {
 }
 
 main p {
-    color: var(--cor3);
+    color: var(--cor2);
     margin: 15px;
     text-align: justify;
     text-indent: 15px;
     line-height: 2em;
-    font-size: 1em;
+    font-weight: lighter;
+    font-size: 1.1em;
+    font-family: var(--fonte-padrao);
 }
 
 main strong {
-    color: var(--cor4);
+    color: var(--cor0);
     font-weight: bold;
 }
 
 main a {
     text-decoration: none;
-    font-weight: bold;
-    color: var(--cor4);
-    background-color: var(--cor0);
-    padding: 1px 3px;
-    margin: 1px;
-    border-radius: 10px;
+    font-weight: lighter;
+    color: var(--cor2);    
+    
+    
 }
 
 main a:hover {
-    text-decoration: underline;
-    color: var(--cor3);
+    text-decoration: none;
+    color: var(--cor0);
 }
 
 main img.img2 {
@@ -314,21 +337,22 @@ div.video > iframe {
     font-family: var(--fonte-destaque);
     background-color: var(--cor0);
     color: var(--cor4);
-    width: 270px;
+    width: 300px;
     height: 20px;
     padding: 10px;
     margin: auto;
-    border-radius: 7px;
-    border: solid 2px var(--cor4);
+    border-radius: 5px;    
     margin-bottom: 40px;
     text-align: center;
 }
 
 .so:hover {
-    background-color: var(--cor3);
-    color: var(--cor0);
-    border: solid 2px white;
-    text-decoration: underline;
+    background-color: white;
+    color: var(--cor4);
+    text-decoration: none;
+    transition: 1s;
+    
+    
 }
 
 .espetacular {
@@ -350,6 +374,7 @@ div.video > iframe {
     display: flex;
     margin: auto;
     padding: 10px;
+    
 }
 
 /* ===========================
@@ -372,7 +397,7 @@ footer > p > a {
 }
 
 footer > p > a:hover {
-    text-decoration: underline;
+    
     color: var(--cor1);
-    font-size: 1.4em;
+    font-size: 1em;
 }
