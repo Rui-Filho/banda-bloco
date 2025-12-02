@@ -205,7 +205,7 @@ a:hover {
     display: block;
     opacity: 1;
     border: 1px solid var(--cor1);
-    width: 400px;
+    width: 300px;
     margin: auto;
     
     
@@ -301,7 +301,7 @@ main a:hover {
 main img.img2 {
     display: block;
     margin: auto;
-    width: 350px;
+    width: 300px;
     padding: 2px;
     border: 1px solid var(--cor4);
     box-sizing: border-box;
