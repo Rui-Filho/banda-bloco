@@ -4,15 +4,23 @@
 
     section#paralax {
     background-color: black;
-    background-image: url(../imagens/cinza.jpg);
+    background-image: url(../imagens/IMG_2181.jpg);
     background-size: cover;
     background-attachment: fixed;
-    height: 100vh;
+    height: 500px;
     background-position: center top;
-    width: 100%;
+    width: 100vw;
+    margin-bottom: 200px;
+    transition: .6s;
     
     
 
+}
+
+main p {
+    
+    font-size: 1.2em;
+    
 }
 
 .menu-btn {
@@ -25,12 +33,12 @@
 }
 
 #menu ul {
-        display: flex;        
+        display: flex; 
+        text-align: left;   
         gap: 10px;
-        margin: 0;
-        padding: 0;
-        align-items: center;
-        ;
+        
+       
+        
     }
 
     nav {

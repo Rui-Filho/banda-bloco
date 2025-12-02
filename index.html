@@ -54,20 +54,18 @@
             <h1 id="about">SOBRE A BANDA</h1>
 
             
-            <div class="carousel">
-            <img src="imagens/carbloco1.jpg" class="carousel-item active">
+           <div class="carousel">
+             <img src="imagens/carbloco1.jpg" class="carousel-item active">
             <img src="imagens/carbloco2.jpg" class="carousel-item">
-            <img src="imagens/carbloco3.jpg" class="carousel-item">
-            <img src="imagens/carbloco4.jpg" class="carousel-item">
-            <img src="imagens/carbloco5.jpg" class="carousel-item">
-            <img src="imagens/carbloco6.jpg" class="carousel-item">
-            <br>
-           
-            </div>
-           
-            <button class="carousel-control next" onclick="changeSlide(1)"> &#10095; Próxima</button><br>
-            <button class="carousel-control prev" onclick="changeSlide(-1)">&#10094; Anterior </button>
-  
+                    <img src="imagens/carbloco3.jpg" class="carousel-item">
+                    <img src="imagens/carbloco4.jpg" class="carousel-item">
+                    <img src="imagens/carbloco5.jpg" class="carousel-item">
+                    <img src="imagens/carbloco6.jpg" class="carousel-item">
+                </div>
+
+                <button class="carousel-control prev" onclick="changeSlide(-1)">&#10094; Anterior</button>
+                <button class="carousel-control next" onclick="changeSlide(1)">&#10095; Próxima</button>
+
             
             
             
@@ -107,7 +105,7 @@
             <h2>Discografia:</h2>   
             <h3>EP "Buzinas & Androides" (2016)</h3> 
             
-                <a href="https://open.spotify.com/intl-pt/album/0HS7AVcFEztJC8nGkMsIH9" target="_blank"><img src="imagens/ep-buzinas.jpg" class="img2" alt="Capa EP Buzinas & Androides"></a><br>
+                <a href="https://open.spotify.com/intl-pt/album/0HS7AVcFEztJC8nGkMsIH9" target="_blank"><img src="imagens/caoa EP buzinas e androides frente 1.jpg" class="img2" alt="Capa EP Buzinas & Androides"></a><br>
                 <a href="https://open.spotify.com/intl-pt/album/0HS7AVcFEztJC8nGkMsIH9" target="_blank"><div class="so">Escute no Spotify </div></a><br>
 
               
@@ -206,6 +204,49 @@
 
 
     <script>
+
+
+let slideIndex = 0;
+let slides = document.querySelectorAll(".carousel-item");
+let autoSlideInterval;
+
+// Exibe o slide atual
+function showSlide(index) {
+    slides.forEach((slide, i) => {
+        slide.classList.remove("active");
+        if (i === index) slide.classList.add("active");
+    });
+}
+
+// Avança ou volta manualmente
+function changeSlide(n) {
+    slideIndex += n;
+    if (slideIndex >= slides.length) slideIndex = 0;
+    if (slideIndex < 0) slideIndex = slides.length - 1;
+
+    showSlide(slideIndex);
+
+    // Reinicia o timer quando usuário clica
+    resetAutoSlide();
+}
+
+// Auto-play
+function autoSlide() {
+    slideIndex++;
+    if (slideIndex >= slides.length) slideIndex = 0;
+    showSlide(slideIndex);
+}
+
+// Reinicia o intervalo quando há clique manual
+function resetAutoSlide() {
+    clearInterval(autoSlideInterval);
+    autoSlideInterval = setInterval(autoSlide, 5000); // 4 segundos
+}
+
+// Inicializando
+showSlide(slideIndex);
+autoSlideInterval = setInterval(autoSlide, 4000);
+
 
 
       
