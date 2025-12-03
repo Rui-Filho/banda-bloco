@@ -23,6 +23,10 @@ main p {
     
 }
 
+main {
+    max-width: 1200px;
+}
+
 .menu-btn {
     display: none;
 }
