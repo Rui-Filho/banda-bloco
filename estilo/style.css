@@ -60,12 +60,12 @@ header {
     display: flexbox;
 }
 
-header > img {
+header > a > img {
     display: inline-block;    
     max-width: 47px;
 }
 
-header > img:hover{
+header > a > img:hover{
     max-width: 55px;
     transition: 1.5s;
 }
@@ -205,7 +205,7 @@ a:hover {
     display: block;
     opacity: 1;
     border: 1px solid var(--cor1);
-    width: 300px;
+    width: 300px;    
     margin: auto;
     
     
@@ -246,15 +246,15 @@ main h1 {
     font-weight: lighter;
     padding: 2px;
     margin: 20px;
-    font-size: 0.9em;
+    font-size: 1em;
     text-align: left;
     
 }
 
 main h2 {
     color: var(--cor0);
-    font-family: var(--fonte-padrao);
-    font-size: 1.5em;
+    font-family: var(--fonte-destaque);
+    font-size: 0.9em;
     font-weight: normal;
     margin: 50px 0;
     text-align: center;
@@ -262,7 +262,7 @@ main h2 {
 
 main h3 {
     color: var(--cor2);
-    font-family: var(--fonte-destaque);
+    font-family: var(--fonte-padrao);
     font-size: 0.8em;
     font-weight: normal;
     text-align: center;
@@ -314,6 +314,8 @@ main img.img2:hover{
 
 }
 
+
+
 /* ===========================
    VÍDEO RESPONSIVO
 =========================== */
@@ -345,7 +347,7 @@ div.video > iframe {
 }
 
 .are {
-    font-size: 1.5em;
+    font-size: 0.8em;
     font-family: var(--fonte-destaque);
 }
 
@@ -399,7 +401,7 @@ div.video > iframe {
 
 footer {
     background-color: var(--cor4);
-    color: var(--cor0);
+    color: var(--cor2);
     text-align: center;
     font-size: 0.7em;
     padding: 10px;
@@ -414,6 +416,6 @@ footer > p > a {
 
 footer > p > a:hover {
     
-    color: var(--cor1);
+    color: var(--cor0);
     font-size: 1em;
 }

@@ -4,10 +4,10 @@
 
     section#paralax {
     background-color: black;
-    background-image: url(../imagens/IMG_2181.jpg);
+    background-image: url(../imagens/carbloco10.jpg);
     background-size: cover;
     background-attachment: fixed;
-    height: 500px;
+    height: 700px;
     background-position: center top;
     width: 100vw;
     margin-bottom: 200px;
