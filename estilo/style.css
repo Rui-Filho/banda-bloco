@@ -62,7 +62,6 @@ header {
     display:flex;
     justify-content: space-between;
     align-items: center;
-    background-image: url(../imagens/carbloco8\ \(Cópia\).jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -106,7 +105,7 @@ header > h1 {
     border: none;
     cursor: pointer;
     color: var(--cor0);       
-    margin: 10px;    
+    margin: 5px;    
     transition: .5s;
     
 }
