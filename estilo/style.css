@@ -53,40 +53,40 @@ body {
 
 header {
     background-color:#000000;    
-    min-height: 100px;
-    width: 100vw;
+    min-height: 1px;
+    width: 97vw;
     text-align: center;
     padding: 1px;
-    display: flexbox;
+    display:flex;
+    justify-content: space-between;
+    align-items: last baseline;
 }
 
 header > a > img {
-    display: inline-block;    
-    max-width: 47px;
+    display: flexbox;    
+    max-width: 40px;
+    padding: 1px;
 }
 
-header > a > img:hover{
-    max-width: 55px;
-    transition: 1.5s;
-}
 
 
 
 header > h1 {
     color: var(--cor0);
     font-family: var(--fonte-bloco);
-    margin-bottom: 5px;
-    padding-top: 5px;
-    font-size: 1em;
+    margin-bottom: 10px;    
+    font-size: 1.3em;
     font-weight: lighter;
-    text-shadow: 1px 1px 0px var(--cor4);
+    padding: 20px;
+    
+    
+    
 }
 
 .img4top {
-    max-width: 20px;
-    display: inline-block;
-    margin: auto;
-    padding: 10px;
+    max-width: 18px;
+    text-align: left;    
+    padding: 12px;
     
 }
 
@@ -95,16 +95,13 @@ header > h1 {
 =========================== */
 
 .menu-btn {
-    font-size: 25px;
+    font-size:25px;
     background: none;
     border: none;
     cursor: pointer;
     color: var(--cor0);
-    
-    display: block;
-    margin: auto;  
-    margin-bottom: 10px;
-    font-family: var(--fonte-padrao);
+    padding-right:  30px;     
+    margin: 10px;    
     transition: .5s;
     
 }
@@ -131,7 +128,7 @@ header > h1 {
 =========================== */
 
 nav {
-    background-color:#000000;  
+    background-color:#ff5555;  
     width: 100vw;
     padding: 20px 1px;
     
@@ -141,7 +138,7 @@ nav {
     transition-duration: 0.5s;
     font-family: var(--fonte-padrao);
     border-radius: 2px;
-    margin: auto;
+    
     transition: 0.3s;
     padding-bottom: 75px;
 }
@@ -169,7 +166,7 @@ a {
     padding-left: 10px;
     font-weight: normal;
     transition-duration: 0.5s;
-    font-family: var(--fonte-destaque);
+    font-family: var(--fonte-padrao);
     border-radius: 15px;
     text-align: center;
     line-height: 25px;
@@ -177,10 +174,9 @@ a {
 }
 
 a:hover {
-    background-color: var(--cor3);
-    color: var(--cor0);
     
-    transition: 1.3s;
+    color: var(--cor3);    
+    transition: .9s;
     
 }
 
@@ -196,7 +192,7 @@ a:hover {
 
 .carousel-item {
     display: none;
-    transition: opacity 0.6s ease;
+    transition: opacity 1s ease;
     width: 99%;
     
 }
@@ -204,7 +200,7 @@ a:hover {
 .carousel-item.active {
     display: block;
     opacity: 0.1px;
-    border: 1px solid var(--cor0);
+    border: 1px solid var(--cor4);
     width: 300px;    
     margin: auto;
     cursor: pointer;   
@@ -229,7 +225,7 @@ a:hover {
     padding: 5px;
     border-radius: 10px;
     border: 1px solid var(--cor4);
-    font-family: var(--fonte-destaque);
+    font-family: var(--fonte-padrao);
 }
 
 
@@ -261,9 +257,9 @@ main h1 {
 
 main h2 {
     color: var(--cor0);
-    font-family: var(--fonte-destaque);
+    font-family: var(--fonte-padrao);
     font-size: 0.9em;
-    font-weight: normal;
+    font-weight: bold;
     margin: 50px 0;
     text-align: center;
 }

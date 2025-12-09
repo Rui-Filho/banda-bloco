@@ -2,9 +2,26 @@
 
 @media screen and (min-width:1200px) {
 
+    header {      
+    
+    width: 97vw;   
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+a:hover {
+    
+    color: var(--cor0);    
+    transition: .9s;
+    
+}
+
     section#paralax {
     background-color: black;
-    background-image: url(../imagens/carbloco10.jpg);
+    background-image: url(../imagens/carbloco10\ \(Cópia\).jpg);
     background-size: cover;
     background-attachment: fixed;
     height: 700px;
