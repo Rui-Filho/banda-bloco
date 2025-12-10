@@ -91,7 +91,7 @@ header {
 
 header > a > img {
     display: flexbox;    
-    max-width: 23px;
+    max-width: 30px;
     padding: 0px;
     margin: 0px;
 }
@@ -113,7 +113,7 @@ header > h1 {
 }
 
 .img4top {
-    max-width: 13px;
+    max-width: 15px;
     text-align: left;    
     padding: 12px;
     
