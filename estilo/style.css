@@ -58,11 +58,11 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
-    width:100vw;
+    width: 100vw;
     padding: 0px;
     margin: 0px;
     height: 60px;
-    min-width: 100px;
+    
     
     display:flex;
     justify-content: space-between;
