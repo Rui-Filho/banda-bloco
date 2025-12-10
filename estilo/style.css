@@ -81,20 +81,13 @@ header {
     padding: 0px;
     margin: 0px;
     height: 60px;
-    
-    
-    
     display:flex;
     justify-content: space-between;
     align-items: center;
    
 }
 
-nav#menu {
-    z-index: 9999;
-    position: relative;
-    margin-top:60px;
-}
+
 
 header > a > img {
     display: flexbox;    
@@ -142,11 +135,7 @@ header > h1 {
     
 }
 
-#menu {
-    display: none;
-    flex-direction: column;
-    transition: .5s;
-}
+
 
 #menu.active {
     display: flex;
@@ -163,11 +152,17 @@ header > h1 {
    NAV
 =========================== */
 
-nav {
-    background-color:#ff5555;  
-    width: 100vw;
+nav#menu {
+    display: none;
+    flex-direction:column;    
+    margin-top:60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    background-color:#ff5555;     
+    width: 100%;
     padding: 20px 1px;
-    
     height: 125px;
     text-align: center;
     font-weight: bold;
@@ -177,12 +172,14 @@ nav {
     transition: 0.3s;
     padding-bottom: 85px;
     
+    
 }
 
 nav > ul > li{
     padding: 1px;
     margin-bottom: 6px;
-    font-size: 1em;
+    font-size: .9em;
+    font-weight: lighter;
 
 }
 
@@ -213,6 +210,7 @@ a:hover {
     
     color: var(--cor3);    
     transition: .9s;
+    font-size: .9em;
     
 }
 
@@ -276,7 +274,7 @@ main, section {
 main h1 {
     color: var(--cor0);
     font-family: var(--fonte-padrao);
-    font-weight: lighter;
+    font-weight: normal;
     padding: 2px;
     margin: 15px;
     font-size: 0.7em;
@@ -287,8 +285,8 @@ main h1 {
 main h2 {
     color: var(--cor0);
     font-family: var(--fonte-padrao);
-    font-size: 0.9em;
-    font-weight: lighter;
+    font-size: 0.7em;
+    font-weight: normal;
     margin: 50px 0;
     text-align: center;
 }

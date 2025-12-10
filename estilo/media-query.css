@@ -49,14 +49,11 @@ main {
     display: none;
 }
 
-#menu  {
-    display: inline-block;
-    
-}
+
 
 #menu ul {
         display: flex; 
-        text-align: left;   
+        
         gap: 10px;
         
        
@@ -65,7 +62,8 @@ main {
 
     nav#menu {
     position: fixed;
-    background-color:#000000;  
+    background-color:#000000; 
+    display: inline-block; 
     
     padding: 10px 20px;
     

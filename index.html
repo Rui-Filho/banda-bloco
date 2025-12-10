@@ -265,6 +265,31 @@ showSlide(slideIndex);
 autoSlideInterval = setInterval(autoSlide, 4000);
 
 
+ // Reinicia o timer do slide automático sempre que for trocado manualmente
+    resetAutoSlide();{}
+
+
+// Inicia o carrossel automático
+function startAutoSlide() {
+    autoSlideInterval = setInterval(() => {
+        changeSlide(1);
+    }, 4000); // troca a cada 4 segundos
+}
+
+// Reinicia quando a pessoa muda manualmente
+function resetAutoSlide() {
+    clearInterval(autoSlideInterval);
+    startAutoSlide();
+}
+
+// Iniciar quando a página carregar
+window.onload = () => {
+    showSlide(slideIndex);
+    startAutoSlide();
+};
+
+
+
 
       
 
@@ -283,11 +308,24 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 
     
-    function toggleMenu() {
-     const menu = document.getElementById('menu');
-     menu.classList.toggle('active');
-    
+   function toggleMenu() {
+    const menu = document.getElementById("menu");
+    menu.classList.toggle("active");
 }
+
+// Suavizar rolagem dos links internos
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener("click", function(e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute("href")).scrollIntoView({
+            behavior: "smooth"
+        });
+
+        // Fechar menu mobile após clicar
+        document.getElementById("menu").classList.remove("active");
+    });
+});
 
 
 
