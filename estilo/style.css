@@ -53,11 +53,15 @@ body {
 =========================== */
 
 header {
-    background-color:#000000;  
-
+    background-color:#000000; 
+    background-image: url(../imagens/carbloco12.jpg);  
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center right;
     width:97vw;
     padding: 0px;
     margin: 0px;
+    height: 60px;
     
     display:flex;
     justify-content: space-between;
@@ -67,7 +71,7 @@ header {
 
 header > a > img {
     display: flexbox;    
-    max-width: 35px;
+    max-width: 23px;
     padding: 0px;
     margin: 0px;
 }
@@ -78,8 +82,9 @@ header > a > img {
 header > h1 {
     color: var(--cor0);
     font-family: var(--fonte-bloco);
-    margin-bottom: 1px;    
-    font-size: 1em;
+    margin-bottom: 1px; 
+    padding: 7px;   
+    font-size: .9em;
     font-weight: lighter;
   
     
@@ -237,14 +242,14 @@ a:hover {
 =========================== */
 
 main {
-    min-width: 320px;
+    min-width: 250px;
     max-width: 850px;
     margin: auto;
     background-color: var(--cor3);
     padding: 10px;
-    box-shadow: 0px 0px 10px var(--cor4);
+    box-shadow: 0px 0px 1px var(--cor0);
     margin-bottom: 50px;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 main h1 {
