@@ -63,17 +63,18 @@ main {
         
     }
 
-    nav {
+    nav#menu {
+    position: fixed;
     background-color:#000000;  
     
-    padding: 10px;
-    height: 20px;
+    padding: 10px 20px;
+    
     text-align: center;
     font-weight: bold;
     transition-duration: 0.5s;
     font-family: var(--fonte-padrao); 
     
-    padding-bottom: 20px;
+    
 }
 
 

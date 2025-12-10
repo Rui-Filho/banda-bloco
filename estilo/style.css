@@ -71,7 +71,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 999;
+    z-index: 9999;
     background-color:#000000; 
     background-image: url(../imagens/carbloco1.jpg);  
     background-repeat: no-repeat;
@@ -83,10 +83,17 @@ header {
     height: 60px;
     
     
+    
     display:flex;
     justify-content: space-between;
     align-items: center;
    
+}
+
+nav#menu {
+    z-index: 9999;
+    position: relative;
+    margin-top:60px;
 }
 
 header > a > img {
@@ -166,15 +173,15 @@ nav {
     font-weight: bold;
     transition-duration: 0.5s;
     font-family: var(--fonte-padrao);
-    border-radius: 2px;
-    
+    border-radius: 2px;    
     transition: 0.3s;
-    padding-bottom: 75px;
+    padding-bottom: 85px;
+    
 }
 
 nav > ul > li{
     padding: 1px;
-    margin-bottom: 5px;
+    margin-bottom: 6px;
     font-size: 1em;
 
 }
