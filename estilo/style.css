@@ -264,6 +264,7 @@ main {
     padding: 5px;
     box-shadow: 0px 0px 1px var(--cor0);
     margin-bottom: 30px;
+    overflow: hidden;
     
 }
 
@@ -428,6 +429,51 @@ div.video > iframe {
     margin: auto;
     padding: 10px;
     
+}
+
+/* FALE CONOSCO*/
+
+div#faleconosco {
+    position: relative;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color:#000000;
+    box-sizing: border-box;
+    height: 100vh;
+    width: 100vw;
+}
+
+section#fale {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    overflow: hidden;
+    background-color: white;
+    width: 250px;
+    height: 500px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px #ff555579;
+    transition: width 1s, height 1s;
+    transition-timing-function: ease;
+    
+
+}
+
+section#fale > div#imagem {
+    display: block;
+    background: #262118 url(../imagens/blocoshow2.jpg) no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    height: 200px;
+
+
+}
+
+section#fale > div#formulario {
+    display: block;
+    padding: 10px;
+    background-color: #000000;
+
 }
 
 /* ===========================
