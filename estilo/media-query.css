@@ -70,6 +70,15 @@
     background-color: #000000;
 }
 
+header > a > img {
+    max-width: 45px;
+}
+
+header > h1 {
+    font-size: 1.3em;
+    letter-spacing:.2em;
+}
+
 
 a:hover {
     
@@ -83,7 +92,7 @@ a:hover {
     background-image: url(../imagens/carbloco10\ \(Cópia\).jpg);
     background-size: cover;
     background-attachment: fixed;
-    height: 700px;
+    height: 850px;
     background-position: center top;
     width: 100vw;
     margin-bottom: 200px;
@@ -114,18 +123,20 @@ main {
         
         gap: 10px;
         
+        
        
         
     }
 
     nav#menu {
     position: fixed;
-    background-color:#000000; 
+     
     display: inline-block; 
+    height: 3vh;
     
-    padding: 10px 20px;
+    padding: 5px 5px;
     
-    text-align: center;
+    
     font-weight: bold;
     transition-duration: 0.5s;
     font-family: var(--fonte-padrao); 
