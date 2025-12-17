@@ -190,6 +190,8 @@ nav > ul > li{
 
 
 
+
+
 /* ===========================
    LINKS
 =========================== */
@@ -240,7 +242,7 @@ a:hover {
     display: block;
     opacity: 0.1px;
     border: 1px solid var(--cor4);
-    width: 230px;    
+    width: 290px;    
     margin: auto;
     cursor: pointer;   
     

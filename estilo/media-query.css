@@ -5,6 +5,14 @@
 
 @media screen and (min-width: 768px)and (max-width:992px){
 
+    .carousel-item.active {
+        width: 400px;
+    }
+
+    .carousel-item.active:hover{
+        width: 430px;
+    }
+
 
     main {
         width: 100%;
@@ -82,17 +90,18 @@ header > h1 {
 
 a:hover {
     
-    color: var(--cor0);    
+    color: var(--cor3);    
     transition: .9s;
+    font-size: .9em;
     
 }
 
     section#paralax {
     background-color: black;
-    background-image: url(../imagens/carbloco10\ \(Cópia\).jpg);
+    background-image: url(../imagens/teste4paralax.jpg);
     background-size: cover;
     background-attachment: fixed;
-    height: 850px;
+    height: 790px;
     background-position: center top;
     width: 100vw;
     margin-bottom: 200px;
@@ -147,6 +156,9 @@ main {
 section#fale {
     width: 100%;
     margin-left: 150px;
+}
+a {
+    font-size: .9em;
 }
 
 
