@@ -438,8 +438,11 @@ div#faleconosco {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     background-color:#000000;
     box-sizing: border-box;
-    height: 100vh;
-    width: 100vw;
+    min-width: 300px;
+    max-width: 700px;
+    height: 70vh;
+    
+
 }
 
 section#fale {
@@ -448,7 +451,7 @@ section#fale {
     left: 50%;
     transform: translate(-50%,-50%);
     overflow: hidden;
-    background-color: white;
+    background-color:#000000;
     width: 250px;
     height: 500px;
     border-radius: 20px;
@@ -461,7 +464,7 @@ section#fale {
 
 section#fale > div#imagem {
     display: block;
-    background: #262118 url(../imagens/blocoshow2.jpg) no-repeat;
+    background: #262118 url(../imagens/fale.jpg) no-repeat;
     background-size: cover;
     background-position: bottom;
     height: 200px;
@@ -473,8 +476,65 @@ section#fale > div#formulario {
     display: block;
     padding: 10px;
     background-color: #000000;
+    height: 100%;
 
 }
+
+div#formulario > h1 {
+    font-size: .9em;
+    text-align: center;
+    padding: 5px;
+    font-family: var(--fonte-destaque);
+}
+
+form#form-contato > button[type=submit] {
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    background-color: var(--cor0);
+    color: white;
+    border: none;
+    margin-bottom: 5px;
+    border-radius: 3px;
+    cursor: pointer;
+
+}
+
+form#form-contato > button[type=submit]:hover{
+    background-color: #bb1717;
+    transition: 1s;
+}
+
+form#form-contato > input[type=reset] {
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    background-color: var(--cor4);
+    color: white;
+    border: none;
+    margin-top: 3px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+form#form-contato > input[type=reset]:hover{
+    background-color:white;
+    color: #262118;
+    transition: 1s;
+}
+
+form#form-contato > input {
+    width: 100%;
+    margin: 2px;
+}
+
+form#form-contato > textarea {
+    margin: 2px;
+    width: 100%;
+}
+
+
+    
 
 /* ===========================
    FOOTER

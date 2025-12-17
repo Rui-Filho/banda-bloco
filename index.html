@@ -213,12 +213,17 @@
 
                 <div id="formulario">
 
-                    <form action="">
-                        <input type="text" name="nome" id="inome" placeholder="NOME" required><br>
-                        <input type="email" name="email" id="iemail" placeholder="EMAIL"><br>
-                        <input type="tel" name="fone" id="ifone" placeholder="FONE"><br>
-                        <textarea name="mensagem" id="imensagem" placeholder="MENSAGEM"></textarea>
+                    <h1>Fale conosco</h1>
+
+                    <form id="form-contato" autocomplete="on">
+                        <input type="text" name="nome" id="inome" placeholder="Seu nome" minlength="5" maxlength="30" required><br>
+                        <input type="email" name="email" id="iemail" placeholder="Seu Email" autocomplete="email" required><br>
+                        <input type="tel" name="fone" id="ifone" placeholder="Seu telefone" autocomplete="tel" required><br>
+                        <textarea name="mensagem" id="imensagem" placeholder="Sua mensagem" cols="27" rows="6" required></textarea><br>
+                        <button type="submit">Enviar</button>
+                        <input type="reset" value="Limpar">
                     </form>
+                    <p id="status"></p>
 
                 </div>
 
