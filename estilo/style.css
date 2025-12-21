@@ -11,6 +11,12 @@
     font-weight: normal;
 }
 
+@font-face {
+    font-family: 'urban';
+    src: url(../fontes/Urban\ Shadow\ Sans\ Serif.otf) format('truetype');
+    font-weight: normal;
+}
+
 /* ===========================
    VARIÁVEIS
 =========================== */
@@ -24,8 +30,8 @@
 
     
     --fonte-padrao: "Inter", sans-serif;
-    --fonte-destaque: "Montserrat", sans-serif;
-    --fonte-bloco: 'aldith', sans-serif;
+    --fonte-destaque: "urban", sans-serif;
+    
 }
 
 /* ===========================
@@ -41,6 +47,7 @@
 }
 
 html,body {
+    /*muito importante, para não deixar barra de rolagem sobrando horizontalmente no body*/
     overflow-x: hidden;
     width: 100%;
 }
@@ -67,13 +74,15 @@ body {
 =========================== */
 
 header {
+    /*deixar o header fixo*/
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 9999;
+
     background-color:#000000; 
-    background-image: url(../imagens/carbloco1.jpg);  
+    background-image: url(../imagens/fundobody2.jpg);  
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
@@ -81,7 +90,9 @@ header {
     padding: 0px;
     margin: 0px;
     height: 60px;
-    display:flex;
+
+    /*alinhar os itens e centralizar horizontal e vertical*/
+    display:flex;    
     justify-content: space-between;
     align-items: center;
    
@@ -101,10 +112,10 @@ header > a > img {
 
 header > h1 {
     color: var(--cor0);
-    font-family: var(--fonte-bloco);
+    font-family: var(--fonte-destaque);
     margin-bottom: 1px; 
     padding-left: 10px;   
-    font-size: .9em;
+    font-size: 1em;
     font-weight: lighter;
     
   
@@ -168,7 +179,7 @@ nav#menu {
     text-align: center;
     font-weight: bold;
     transition-duration: 0.5s;
-    font-family: var(--fonte-padrao);
+    font-family: var(--fonte-destaque);
     border-radius: 2px;    
     transition: 0.3s;
     padding-bottom: 85px;
@@ -244,7 +255,9 @@ a:hover {
     border: 1px solid var(--cor4);
     width: 290px;    
     margin: auto;
-    cursor: pointer;   
+    cursor: pointer;
+    border-radius: 7px;  
+    box-shadow: 1px 1px 1px 1px #ff4b2b83; 
     
 }
 
@@ -285,7 +298,7 @@ main h1 {
     font-weight: lighter;
     padding: 2px;
     margin: 15px;
-    font-size: .7em;
+    font-size: .9em;
     text-align: center;
     letter-spacing: .4em;
     margin-bottom: 50px;
@@ -293,24 +306,26 @@ main h1 {
     
 }
 
+
+
 main h2 {
     color: white;
-    font-family: var(--fonte-padrao);
-    font-size: 0.8em;
-    font-weight: normal;
+    font-family: var(--fonte-destaque);
+    font-size: .9em;
+    font-weight: lighter;
     margin: 50px 0;
     text-align: center;
-    letter-spacing: .4em;
+    letter-spacing: .2em;
 }
 
 main h3 {
     color: white;
-    font-family: var(--fonte-padrao);
-    font-size: 0.9em;
+    font-family: var(--fonte-destaque);
+    font-size: .9em;
     font-weight: lighter;
     text-align: center;
     margin: 20px 0;
-    letter-spacing: .2em;
+    letter-spacing: .1em;
 }
 
 main p {
@@ -392,12 +407,12 @@ div.video > iframe {
 .p1 {
     text-align: center;
     font-family: var(--fonte-padrao);
-    font-size: .7em;
+    font-size: .8em;
 }
 
 .are {
-    font-size: 0.8em;
-    font-family: var(--fonte-padrao);
+    font-size: .8em;
+    font-family: var(--fonte-destaque);
 }
 
 /*botoes */
@@ -435,8 +450,9 @@ div.video > iframe {
     text-align: center;
     font-family: var(--fonte-padrao);
     font-size: .8em;
-    font-weight: lighter;
+    font-weight: normal;
     color: white;
+    letter-spacing: .1em;
     
     
 }
@@ -453,15 +469,12 @@ div.video > iframe {
     
 }
 
-h1#contact {
-    font-size: .9em;
-}
 
 /* FALE CONOSCO*/
 
 div#faleconosco {
     position: relative;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: var(--fonte-padrao),system-ui,Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     background-color: #000000;
     box-sizing: border-box;
     min-width: 300px;
@@ -512,19 +525,24 @@ section#fale > div#formulario {
 
 
 div#formulario > h1 {
-    font-size: 1em;
+    font-size: .9em;
     text-align: center;
     padding: 5px;
-    font-family: var(--fonte-padrao);
+    font-family: var(--fonte-destaque);
     color: #ff4b2b;
-    font-weight: bold;
+    font-weight: lighter;
 }
 
 section#fale > div#formulario input{
     padding: 1px;
-    font-size: 1em;
+    font-size: .9em;
     border-radius: 5px;
+    font-family: var(--fonte-padrao);
     
+}
+section#fale > div#formulario textarea{
+    font-family: var(--fonte-padrao);
+    font-size: .9em;
 }
 
 form#form-contato > button[type=submit] {
@@ -561,6 +579,7 @@ form#form-contato > input[type=reset] {
     font-size: 1em;
     height: 30px;
     width: 50%;
+    border-radius: 30px;
     
     color: white;
     border: none;
@@ -569,7 +588,7 @@ form#form-contato > input[type=reset] {
     cursor: pointer;
 
     background: linear-gradient(135deg, #ff416c, #ff4b2b);
-    border-radius: 30px;
+    
     font-weight: 470;
     transition: transform 0.2s ease;
 }
@@ -603,7 +622,8 @@ footer {
     text-align: center;
     font-size: 0.7em;
     padding: 10px;
-    font-family: var(--fonte-bloco);
+    font-family: var(--fonte-destaque);
+    letter-spacing: 1px;
 }
 
 footer > p > a {
