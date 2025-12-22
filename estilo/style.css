@@ -92,6 +92,7 @@ header {
     padding: 0px;
     margin: 0px;
     height: 60px;
+    border-bottom: solid 1px #ff4b2b3b;
 
     /*alinhar os itens e centralizar horizontal e vertical*/
     display:flex;    
@@ -519,20 +520,22 @@ section#fale {
 }
 
 section#fale > div#imagem {
-    display: block;
-    background: #262118 url(../imagens/fale.jpg) no-repeat;
-    background-size: cover;
-    background-position: bottom;
+    display: block;        
     height: 200px;
+    background-image: url(../imagens/teste\ paralax.jpg);
+    background-position: no-repeat;
+    background-size: cover;
+
 
 
 }
 
 section#fale > div#formulario {
     display: block;
-    padding: 10px;
-    background-color: #000000;
+    padding: 10px;    
+
     height: 100%;
+
 
 }
 
@@ -595,32 +598,48 @@ form#form-contato > input[type=reset] {
     width: 50%;
     border-radius: 30px;
     
-    color: white;
-    border: none;
+    color: #999;
     margin-top: 5px;
     
     cursor: pointer;
 
-    background: linear-gradient(135deg, #ff416c, #ff4b2b);
+    background: transparent;
     
     font-weight: 470;
     transition: transform 0.2s ease;
 }
 
 form#form-contato > input[type=reset]:hover{
-    background-color:white;
-    color: #262118;
+    background: transparent;
+    color:#ff4b2b;
     transition: 1s;
 }
 
 form#form-contato > input {
     width: 100%;
     margin: 2px;
+
+    background: #111;
+    border: 1px solid #333;
+    color: #fff;
+    border-radius: 8px;
+    padding: 12px;
+
 }
 
 form#form-contato > textarea {
     margin: 2px;
     width: 100%;
+    background: #111;
+    border: 1px solid #333;
+    color: #fff;
+    border-radius: 8px;
+    
+}
+form#form-contato > input:focus,textarea:focus {
+    border-color: #ff416c;
+    outline: none;
+
 }
 
 
