@@ -235,6 +235,10 @@ a:hover {
     
 }
 
+section#paralax > h1 {
+    display: none;
+}
+
 /* ===========================
    CARROSSEL
 =========================== */

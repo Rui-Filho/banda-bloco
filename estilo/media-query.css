@@ -83,7 +83,7 @@
 }
 
 header > a > img {
-    max-width: 45px;
+    max-width: 55px;
 }
 
 header > h1 {
@@ -116,14 +116,16 @@ a:hover {
 }
 
 section#paralax > h1{
+    display: block;
     text-align: left;
-    color: rgba(255, 255, 255, 0.719);
-    font-family: var(--fonte-destaque);
+    color: rgba(255, 255, 255, 0.795)  ; 
+    font-family:  var(--fonte-destaque);
     margin: auto;
+    font-weight: lighter;
     background-color: rgba(0, 0, 0, 0.281);
     width: 100vw;
     height: 1%;
-    padding: 50px;
+    padding: 40px;
 }
 
 main p {
@@ -153,8 +155,7 @@ main {
     }
 
     nav#menu {
-    position: fixed;
-    background: rgba(255,0,0,0.92);
+    position: fixed;   
      
     display: inline-block; 
     height: 3vh;
