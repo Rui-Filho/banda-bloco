@@ -264,7 +264,73 @@
     </footer>
 
 
+    
+<script src="https://cdn.jsdelivr.net/npm/emailjs@3/dist/email.min.js"></script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  emailjs.init("Qyisl1ChcK1cUF1cj");
+
+  const form = document.getElementById("form-contato");
+  const status = document.getElementById("status");
+
+  if (!form) {
+    console.error("Formulário não encontrado");
+    return;
+  }
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    status.innerText = "Enviando...";
+
+    emailjs.sendForm(
+      "service_4ntim3e",
+      "template_xkjgb5e",
+      this
+    )
+    .then(() => {
+      status.innerText = "Mensagem enviada com sucesso!";
+      form.reset();
+    })
+    .catch(err => {
+      console.error("Erro EmailJS:", err);
+      status.innerText = "Erro ao enviar mensagem";
+    });
+  });
+
+});
+</script>
+
     <script>
+
+        document.addEventListener("DOMContentLoaded", function () {
+  emailjs.init("Qyisl1ChcK1cUF1cj");
+
+  const form = document.getElementById("form-contato");
+  const status = document.getElementById("status");
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    status.innerText = "Enviando...";
+
+    emailjs.sendForm(
+      "service_4ntim3e",
+      "template_xkjgb5e",
+      this
+    )
+    .then(() => {
+      status.innerText = "Mensagem enviada!";
+      form.reset();
+    })
+    .catch(err => {
+      console.error(err);
+      status.innerText = "Erro ao enviar";
+    });
+  });
+});
 
 
 let slideIndex = 0;
@@ -378,37 +444,9 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 
 
-<script src="https://cdn.jsdelivr.net/npm/emailjs@3/dist/email.min.js"></script>
 
-<script>
-  (function () {
-    emailjs.init("ya_F8oDgkh43wDKu2"); // sua PUBLIC KEY
-  })();
 
-  const form = document.getElementById("form-contato");
-  const status = document.getElementById("status");
 
-  form.addEventListener("submit", function (e) {
-    e.preventDefault();
-
-    status.innerText = "Enviando mensagem...";
-
-    emailjs.sendForm(
-      "service_4ntim3e",     // Service ID
-      "template_xkjgb5e",    // Template ID
-      form,
-      "ya_F8oDgkh43wDKu2"    // 🔴 PUBLIC KEY AQUI
-    )
-    .then(function () {
-      status.innerText = "Mensagem enviada com sucesso!";
-      form.reset();
-    })
-    .catch(function (error) {
-      console.error("Erro EmailJS:", error);
-      status.innerText = "Erro ao enviar a mensagem.";
-    });
-  });
-</script>
 
 
 </body>
