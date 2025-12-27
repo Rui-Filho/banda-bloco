@@ -374,5 +374,36 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 
     </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/emailjs@3/dist/email.min.js"></script>
+
+<script>
+  // Inicializa o EmailJS com SUA Public Key
+  emailjs.init("ya_F8oDgkh43wDKu2");
+
+  const form = document.getElementById("form-contato");
+  const status = document.getElementById("status");
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    status.innerText = "Enviando mensagem...";
+
+    emailjs.sendForm(
+      "service_4ntim3e",      // Service ID
+      "template_xkjgb5e",     // Template ID
+      this
+    )
+    .then(() => {
+      status.innerText = "Mensagem enviada com sucesso!";
+      form.reset();
+    })
+    .catch((error) => {
+      console.error("Erro:", error);
+      status.innerText = "Erro ao enviar. Tente novamente.";
+    });
+  });
+</script>
+
 </body>
 </html>
