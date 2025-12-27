@@ -566,7 +566,7 @@ section#fale > div#formulario textarea{
     font-size: .9em;
 }
 
-form#form-contato > button[type=submit] {
+form#form-contato > input[type=submit] {
     display: block;
     margin: auto;
     font-size: 1em;
@@ -586,7 +586,7 @@ form#form-contato > button[type=submit] {
 
 }
 
-form#form-contato > button[type=submit]:hover{
+form#form-contato > input[type=submit]:hover{
     background-color: white;
     transition: 1s;
     color: var(--cor1);
@@ -594,30 +594,7 @@ form#form-contato > button[type=submit]:hover{
 
 }
 
-form#form-contato > input[type=reset] {
-    display: block;
-    margin: auto;
-    font-size: 1em;
-    height: 30px;
-    width: 50%;
-    border-radius: 30px;
-    
-    color: #999;
-    margin-top: 5px;
-    
-    cursor: pointer;
 
-    background: transparent;
-    
-    font-weight: 470;
-    transition: transform 0.2s ease;
-}
-
-form#form-contato > input[type=reset]:hover{
-    background: transparent;
-    color:#ff4b2b;
-    transition: 1s;
-}
 
 form#form-contato > input {
     width: 100%;
@@ -644,6 +621,11 @@ form#form-contato > input:focus,textarea:focus {
     border-color: #ff416c;
     outline: none;
 
+}
+
+p#status {
+    color: #ff4b2b;
+    font-family: var(--fonte-padrao);
 }
 
 

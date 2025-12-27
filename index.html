@@ -211,6 +211,8 @@
                 (51) 985245928 
             </p>
 
+            
+
            <div id="faleconosco">
 
             <section id="fale">
@@ -231,8 +233,9 @@
                         <input type="email" name="email" id="iemail" placeholder="Seu Email" autocomplete="email" required><br>
                         <input type="tel" name="telefone" id="ifone" placeholder="Seu telefone" autocomplete="tel" required><br>
                         <textarea name="mensagem" id="imensagem" placeholder="Sua mensagem" cols="27" rows="6" required></textarea><br>
-                        <button type="submit">Enviar</button>
-                        <input type="reset" value="Limpar">
+                        <input type="submit" value="Enviar">
+                        
+                       
                     </form>
                     <p id="status"></p>
 
@@ -264,73 +267,13 @@
     </footer>
 
 
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+ <script src="script.js"></script>   
+
+
     
-<script src="https://cdn.jsdelivr.net/npm/emailjs@3/dist/email.min.js"></script>
-
 <script>
-document.addEventListener("DOMContentLoaded", function () {
-
-  emailjs.init("Qyisl1ChcK1cUF1cj");
-
-  const form = document.getElementById("form-contato");
-  const status = document.getElementById("status");
-
-  if (!form) {
-    console.error("Formulário não encontrado");
-    return;
-  }
-
-  form.addEventListener("submit", function (e) {
-    e.preventDefault();
-
-    status.innerText = "Enviando...";
-
-    emailjs.sendForm(
-      "service_4ntim3e",
-      "template_xkjgb5e",
-      this
-    )
-    .then(() => {
-      status.innerText = "Mensagem enviada com sucesso!";
-      form.reset();
-    })
-    .catch(err => {
-      console.error("Erro EmailJS:", err);
-      status.innerText = "Erro ao enviar mensagem";
-    });
-  });
-
-});
-</script>
-
-    <script>
-
-        document.addEventListener("DOMContentLoaded", function () {
-  emailjs.init("Qyisl1ChcK1cUF1cj");
-
-  const form = document.getElementById("form-contato");
-  const status = document.getElementById("status");
-
-  form.addEventListener("submit", function (e) {
-    e.preventDefault();
-
-    status.innerText = "Enviando...";
-
-    emailjs.sendForm(
-      "service_4ntim3e",
-      "template_xkjgb5e",
-      this
-    )
-    .then(() => {
-      status.innerText = "Mensagem enviada!";
-      form.reset();
-    })
-    .catch(err => {
-      console.error(err);
-      status.innerText = "Erro ao enviar";
-    });
-  });
-});
 
 
 let slideIndex = 0;
