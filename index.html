@@ -226,10 +226,10 @@
 
                     
 
-                    <form id="form-contato" autocomplete="on">
+                    <form id="form-contato" method="post">
                         <input type="text" name="nome" id="inome" placeholder="Seu nome" minlength="5" maxlength="30" required><br>
                         <input type="email" name="email" id="iemail" placeholder="Seu Email" autocomplete="email" required><br>
-                        <input type="telefone" name="fone" id="ifone" placeholder="Seu telefone" autocomplete="tel" required><br>
+                        <input type="tel" name="telefone" id="ifone" placeholder="Seu telefone" autocomplete="tel" required><br>
                         <textarea name="mensagem" id="imensagem" placeholder="Sua mensagem" cols="27" rows="6" required></textarea><br>
                         <button type="submit">Enviar</button>
                         <input type="reset" value="Limpar">
@@ -375,7 +375,10 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 </script>
 
-    <script src="https://cdn.jsdelivr.net/npm/emailjs@3/dist/email.min.js"></script>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/emailjs@3/dist/email.min.js"></script>
 
 <script>
   // Inicializa o EmailJS com SUA Public Key
