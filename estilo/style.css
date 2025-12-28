@@ -175,7 +175,7 @@ nav#menu {
     top: 0;
     left: 0;
     z-index: 9999;
-    background: linear-gradient(135deg, #ff416c, #ff4b2b);    
+    background: linear-gradient(135deg, #ff416c, #ff4b2b);  
     width: 100%;
     padding: 20px 1px;
     height: 125px;
@@ -287,7 +287,7 @@ main {
     min-width: 250px;
     max-width: 768px;
     margin: auto;
-    background: linear-gradient(135deg, #000000, #000001);
+    background: linear-gradient(135deg, black, rgb(8, 8, 8));
     padding: 5px;
     box-shadow: 0px 0px 1px var(--cor0);
     margin-bottom: 30px;

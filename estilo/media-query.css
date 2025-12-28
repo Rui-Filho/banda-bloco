@@ -40,6 +40,16 @@
 
 @media screen and (min-width: 992px) and (max-width: 1200px) {
 
+    .carousel-item.active {
+        width: 450px;
+    }
+
+    .carousel-item.active:hover{
+        width: 470px;
+    }
+
+
+
 
     main {
         width: 100%;
@@ -129,6 +139,16 @@ section#paralax > h1{
     padding: 40px;
 }
 
+.carousel-item.active {
+        width: 500px;
+    }
+
+    .carousel-item.active:hover{
+        width: 550px;
+    }
+
+
+
 main p {
     
     font-size: 1em;
@@ -136,7 +156,7 @@ main p {
 }
 
 main {
-    max-width: 960px;
+    max-width: 1200px;
 }
 
 main h1 {
@@ -181,7 +201,7 @@ main h2#video {
 
 section#fale {
     width: 80%;
-    margin-left: 150px;
+    margin-left: 250px;
     height: 620px;
 }
 a {
