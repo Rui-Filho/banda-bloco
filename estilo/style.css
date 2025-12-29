@@ -24,11 +24,11 @@
 =========================== */
 
 :root {
-    --cor0: #ff5555;
-    --cor1: #595856;
-    --cor2: white;
-    --cor3: #000000;
-    --cor4: #262118;
+    --cor-red1: #C1121F;  
+    --cor-red2: #7A0B0B;  
+    --cor-white: #E6EAF0;
+    --cor-black: #101923;
+    
 
     
     --fonte-padrao: "Inter", sans-serif;
@@ -59,7 +59,7 @@ html,body {
 =========================== */
 
 body {
-    background-color: var(--cor3);
+    background-color: var(--cor-black);
     font-family: var(--fonte-padrao);
     background: url(../imagens/fundobody2.jpg);
     background-repeat: no-repeat;
@@ -83,16 +83,16 @@ header {
     width: 100%;
     z-index: 9999;
 
-    background-color:#000000; 
+    background-color:var(--cor-black); 
     background-image: url(../imagens/fundobody2.jpg);  
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: top;
+    background-position: center;
     width: 100vw;
     padding: 0px;
     margin: 0px;
     height: 60px;
-    border-bottom: solid 1px #ff4b2b3b;
+    border-bottom: solid 1px var(--cor-red2);
 
     /*alinhar os itens e centralizar horizontal e vertical*/
     display:flex;    
@@ -114,11 +114,11 @@ header > a > img {
 
 
 header > h1 {
-    color: var(--cor0);
+    color: var(--cor-red1);
     font-family: var(--fonte-destaque);
     margin-bottom: 1px; 
     padding-left: 10px;   
-    font-size: 1em;
+    font-size: 1.1em;
     font-weight: lighter;
     
   
@@ -144,7 +144,7 @@ header > h1 {
     background: none;
     border: none;
     cursor: pointer;
-    color: var(--cor0);      
+    color: var(--cor-red1);      
      
     transition: .5s;
     
@@ -175,7 +175,12 @@ nav#menu {
     top: 0;
     left: 0;
     z-index: 9999;
-    background: linear-gradient(135deg, #ff416c, #ff4b2b);  
+    box-shadow:0 4px 20px rgba(193, 18, 31, 0.25);
+     background: linear-gradient(
+    180deg,
+    #9E1418 0%,
+    #C1121F 100%
+  );
     width: 100%;
     padding: 20px 1px;
     height: 125px;
@@ -193,11 +198,12 @@ nav#menu {
 nav > ul > li{
     padding: 1px;
     margin-bottom: 6px;
-    font-size: .9em;
+    font-size: .8em;
     font-weight: normal;
     letter-spacing: .2em;
     text-decoration: none;
     list-style: none;
+    color: var(--cor-white);
     
 
 }
@@ -214,7 +220,7 @@ nav > ul > li{
  
 
 a {
-    color: var(--cor2);
+    color: var(--cor-white);
     text-decoration: none;
     padding: 5px;
     padding-left: 10px;
@@ -229,7 +235,7 @@ a {
 
 a:hover {
     
-    color: var(--cor3);    
+    color: var(--cor-black);    
     transition: .9s;
     font-size: .9em;
     
@@ -264,7 +270,7 @@ section#paralax > h1 {
     margin: auto;
     cursor: pointer;
     border-radius: 7px;  
-    box-shadow: 1px 1px 1px 1px #ff4b2b2f; 
+    box-shadow: 1px 1px 1px 1px var(--cor-black); 
     
 }
 
@@ -287,9 +293,9 @@ main {
     min-width: 250px;
     max-width: 768px;
     margin: auto;
-    background: linear-gradient(135deg, black, rgb(8, 8, 8));
+    background: var(--cor-black);
     padding: 5px;
-    box-shadow: 0px 0px 1px var(--cor0);
+    box-shadow: 0px 0px 1px var(--cor-red2);
     margin-bottom: 30px;
     overflow: hidden;
     
@@ -300,7 +306,7 @@ main, section {
 }
 
 main h1 {
-    color: #ff4b2b;
+    color: var(--cor-red1);
     font-family: var(--fonte-destaque);
     font-weight: lighter;
     padding: 2px;
@@ -320,7 +326,7 @@ main h1 {
 
 
 main h2 {
-    color:#ff4b2b;
+    color:var(--cor-red1);
     font-family: var(--fonte-destaque);
     font-size: .8em;
     font-weight: lighter;
@@ -338,7 +344,7 @@ main h2#video {
 }
 
 main h3 {
-    color: white;
+    color: var(--cor-white);
     font-family: var(--fonte-padrao);
     font-size: .8em;
     font-weight: normal;
@@ -348,7 +354,7 @@ main h3 {
 }
 
 main p {
-    color: var(--cor2);
+    color: var(--cor-white);
     margin: 15px;
     text-align: justify;
     text-indent: 15px;
@@ -359,22 +365,22 @@ main p {
 }
 
 main strong {
-    color: var(--cor0);
+    color: var(--cor-white);
     font-weight: bold;
 }
 
 main a {
     text-decoration: none;
     font-weight: lighter;
-    color: var(--cor2);    
+    color: var(--cor-white);    
     
     
 }
 
 main a:hover {
     text-decoration: none;
-    color: var(--cor0);
-    font-size: .8em;
+    color: var(--cor-red1);
+    font-size: .9em;
 }
 
 main img.img2 {
@@ -382,14 +388,14 @@ main img.img2 {
     margin: auto;
     width: 300px;
     padding: 2px;
-    border: 1px solid var(--cor4);
+    border: 1px solid var(--cor-red1);
     box-sizing: border-box;
-    box-shadow: 0px 5px 15px rgba(255, 0, 80, 0.2);
+    box-shadow: 0px 1px 3px 1px #C1121F;
     border-radius: 12px;
 }
 
 main img.img2:hover{
-    border: .1px solid #ff55555e;
+    border: .1px solid #7A0B0B;
     transition: 2s;
     box-sizing: border-box;
     width: 310px;
@@ -404,7 +410,7 @@ main img.img2:hover{
 =========================== */
 
 div.video {
-    background-color: var(--cor3);
+    background-color: var(--cor-black);
     margin: 0 -20px 30px -20px;
     padding: 20px;
     position: relative;
@@ -437,7 +443,7 @@ div.video > iframe {
 /*botoes */
 .so {
     font-family: var(--fonte-padrao);
-    color: var(--cor3);
+    color: var(--cor-white);
     font-size: .9em;    
     width: 300px;
     height: 20px;
@@ -445,7 +451,7 @@ div.video > iframe {
     margin: auto;       
     margin-bottom: 40px;
     text-align: center;
-    background: linear-gradient(135deg, #ff416c, #ff4b2b);
+    background: linear-gradient(135deg, #C1121F, #ff4b2b);
     border-radius: 30px;
     font-weight: 470;
     transition: transform 0.2s ease;
@@ -453,7 +459,7 @@ div.video > iframe {
 
 .so:hover {
     background-color: white;
-    color: var(--cor4);
+    color: var(--cor-black);
     text-decoration: none;
     transform: scale(1.05);
 
@@ -470,7 +476,7 @@ div.video > iframe {
     font-family: var(--fonte-padrao);
     font-size: .8em;
     font-weight: normal;
-    color: white;
+    color: var(--cor-white);
     letter-spacing: .1em;
     
     
@@ -494,7 +500,7 @@ div.video > iframe {
 div#faleconosco {
     position: relative;
     font-family: var(--fonte-padrao),system-ui,Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background-color: #000000;
+    background-color: var(--cor-black);
     box-sizing: border-box;
     min-width: 300px;
     max-width: 700px;
@@ -511,11 +517,11 @@ section#fale {
     left: 50%;
     transform: translate(-50%,-50%);
     overflow: hidden;
-    background-color: #000000;
+    background-color: var(--cor-black);
     width: 275px;
     height: 580px;
     border-radius: 20px;
-    box-shadow: 0px 0px 10px #595856;
+    box-shadow: 0px 0px 10px #7A0B0B;
     transition: width 1s, height 1s;
     transition-timing-function: ease;
     
@@ -550,7 +556,7 @@ div#formulario > h1 {
     text-align: center;
     padding: 5px;
     font-family: var(--fonte-destaque);
-    color: #ff4b2b;
+    color: var(--cor-red1);
     font-weight: lighter;
 }
 
@@ -573,7 +579,7 @@ form#form-contato > input[type=submit] {
     width: 50%;
     height: 30px;
     
-    color: white;
+    color: var(--cor-white);
     border: none;
     margin-bottom: 7px;
     
@@ -589,8 +595,8 @@ form#form-contato > input[type=submit] {
 form#form-contato > input[type=submit]:hover{
     background-color: white;
     transition: 1s;
-    color: var(--cor1);
-    border: solid 1px #595856;
+    color: var(--cor-black);
+    border: solid 1px #101923;
 
 }
 
@@ -600,9 +606,9 @@ form#form-contato > input {
     width: 100%;
     margin: 2px;
 
-    background: #111;
+    background: #101923;
     border: 1px solid #333;
-    color: #fff;
+    color: #E6EAF0;
     border-radius: 8px;
     padding: 12px;
 
@@ -611,20 +617,20 @@ form#form-contato > input {
 form#form-contato > textarea {
     margin: 2px;
     width: 100%;
-    background: #111;
+    background: #101923;
     border: 1px solid #333;
-    color: #fff;
+    color: #E6EAF0;
     border-radius: 8px;
     
 }
 form#form-contato > input:focus,textarea:focus {
-    border-color: #ff416c;
+    border-color: #C1121F;
     outline: none;
 
 }
 
 p#status {
-    color: #ff4b2b;
+    color: #E6EAF0;
     font-family: var(--fonte-padrao);
 }
 
@@ -636,8 +642,8 @@ p#status {
 =========================== */
 
 footer {
-    background: linear-gradient(135deg, #ff416c, #ff4b2b);
-    color: var(--cor2);
+    background: linear-gradient(135deg, #C1121F, #ff4b2b);
+    color: var(--cor-white);
     text-align: center;
     font-size: 0.7em;
     padding: 10px;
@@ -646,13 +652,13 @@ footer {
 }
 
 footer > p > a {
-    color:var(--cor4);
+    color:var(--cor-white);
     font-weight: bolder;
     text-decoration: none;
 }
 
 footer > p > a:hover {
     
-    color: var(--cor3);
-    font-size: .8em;
+    color: var(--cor-black);
+    font-size: .9em;
 }

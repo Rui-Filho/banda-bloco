@@ -1,6 +1,20 @@
 @charset "UTF-8";
 
 
+:root {
+    --cor-red1: #C1121F;  
+    --cor-red2: #7A0B0B;  
+    --cor-white: #E6EAF0;
+    --cor-black: #101923;
+    
+
+    
+    --fonte-padrao: "Inter", sans-serif;
+    --fonte-destaque: "urban", sans-serif;
+    
+}
+
+
 
 
 @media screen and (min-width: 768px)and (max-width:992px){
@@ -82,7 +96,7 @@
 
     header {   
         
-        background:black ;  
+        background-color: var(--cor-black);
 
     
         width: 100vw;   
@@ -105,15 +119,15 @@ header > h1 {
 
 a:hover {
     
-    color: var(--cor3);    
+    color: var(--cor-black);    
     transition: .9s;
     font-size: .9em;
     
 }
 
     section#paralax {
-    background-color: black;
-    background-image: url(../imagens/teste4paralax.jpg);
+    background-color: var(--cor-black);
+    background-image: url(../imagens/testeparalaxnovo.jpg);
     background-size: cover;
     background-attachment: fixed;
     height: 870px;
