@@ -84,7 +84,7 @@ header {
     z-index: 9999;
 
     background-color:var(--cor-black); 
-    background-image: url(../imagens/fundobody2.jpg);  
+    
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -105,7 +105,7 @@ header {
 
 header > a > img {
     display: flexbox;    
-    max-width: 30px;
+    max-width: 40px;
     padding: 0px;
     margin: 0px;
 }
@@ -176,21 +176,20 @@ nav#menu {
     left: 0;
     z-index: 9999;
     box-shadow:0 4px 20px rgba(193, 18, 31, 0.25);
-     background: linear-gradient(
-    180deg,
-    #9E1418 0%,
-    #C1121F 100%
-  );
+    background: linear-gradient(200deg,#C1121F,  #ff416c);
     width: 100%;
     padding: 20px 1px;
     height: 125px;
     text-align: center;
-    font-weight: bold;
+    font-weight: bolder;
+    
     transition-duration: 0.5s;
     font-family: var(--fonte-destaque);
     border-radius: 2px;    
     transition: 0.3s;
     padding-bottom: 85px;
+
+    
     
     
 }
@@ -198,8 +197,8 @@ nav#menu {
 nav > ul > li{
     padding: 1px;
     margin-bottom: 6px;
-    font-size: .8em;
-    font-weight: normal;
+    font-size: .7em;
+    font-weight: bolder;
     letter-spacing: .2em;
     text-decoration: none;
     list-style: none;
@@ -390,12 +389,12 @@ main img.img2 {
     padding: 2px;
     border: 1px solid var(--cor-red1);
     box-sizing: border-box;
-    box-shadow: 0px 1px 3px 1px #C1121F;
+    box-shadow: 0px 0px 0px 1px #c1121e65;
     border-radius: 12px;
 }
 
 main img.img2:hover{
-    border: .1px solid #7A0B0B;
+    border: .1px solid #7a0b0b74;
     transition: 2s;
     box-sizing: border-box;
     width: 310px;
@@ -445,13 +444,13 @@ div.video > iframe {
     font-family: var(--fonte-padrao);
     color: var(--cor-white);
     font-size: .9em;    
-    width: 300px;
+    width: 120px;
     height: 20px;
     padding: 10px;
     margin: auto;       
     margin-bottom: 40px;
     text-align: center;
-    background: linear-gradient(135deg, #C1121F, #ff4b2b);
+    background: linear-gradient(200deg,#C1121F,  #ff416c);
     border-radius: 30px;
     font-weight: 470;
     transition: transform 0.2s ease;
@@ -521,7 +520,7 @@ section#fale {
     width: 275px;
     height: 580px;
     border-radius: 20px;
-    box-shadow: 0px 0px 10px #7A0B0B;
+    box-shadow: 0px 0px 10px #7a0b0ba8;
     transition: width 1s, height 1s;
     transition-timing-function: ease;
     
@@ -642,13 +641,14 @@ p#status {
 =========================== */
 
 footer {
-    background: linear-gradient(135deg, #C1121F, #ff4b2b);
+    background-color: var(--cor-black);
     color: var(--cor-white);
     text-align: center;
     font-size: 0.7em;
     padding: 10px;
     font-family: var(--fonte-destaque);
     letter-spacing: 1px;
+    border-top: 1px solid var(--cor-red1);
 }
 
 footer > p > a {
@@ -659,6 +659,6 @@ footer > p > a {
 
 footer > p > a:hover {
     
-    color: var(--cor-black);
+    color: var(--cor-red1);
     font-size: .9em;
 }

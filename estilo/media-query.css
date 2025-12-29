@@ -143,11 +143,12 @@ a:hover {
 section#paralax > h1{
     display: block;
     text-align: left;
-    color: rgba(255, 255, 255, 0.795)  ; 
+    color: #c1121e83 ; 
+    
     font-family:  var(--fonte-destaque);
     margin: auto;
     font-weight: lighter;
-    background-color: rgba(0, 0, 0, 0.281);
+    background-color: rgba(0, 0, 0, 0.072);
     width: 100vw;
     height: 1%;
     padding: 40px;
@@ -197,20 +198,26 @@ main h2#video {
         
     }
 
-    nav#menu {
-    position: fixed;   
+nav#menu {
+position: fixed;  
+z-index: 9999;
+
      
-    display: inline-block; 
-    height: 3vh;
+display: block; 
+height: 3vh;
     
-    padding: 5px 5px;
-    
-    
-    font-weight: bold;
-    transition-duration: 0.5s;
-    font-family: var(--fonte-padrao); 
+padding: 5px 5px;
     
     
+font-weight: bold;
+transition-duration: 0.5s;
+font-family: va(--fonte-padrao); 
+    
+    
+}
+
+div#video > iframe{
+    width: 20%;
 }
 
 section#fale {
