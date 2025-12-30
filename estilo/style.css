@@ -84,10 +84,11 @@ header {
     z-index: 9999;
 
     background-color:var(--cor-black); 
+    background-image: url(../imagens/headerback.jpg);
     
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: bottom;
     width: 100vw;
     padding: 0px;
     margin: 0px;
@@ -422,6 +423,8 @@ div.video > iframe {
     left: 5%;
     width: 90%;
     height: 90%;
+    border-radius: 20px;
+    box-shadow:1px 1px 1px 1px #ff4b2b82;
 }
 
 /* ===========================

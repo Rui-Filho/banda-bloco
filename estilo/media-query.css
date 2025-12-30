@@ -97,6 +97,7 @@
     header {   
         
         background-color: var(--cor-black);
+        background-image: none;
 
     
         width: 100vw;   
@@ -133,6 +134,7 @@ a:hover {
     height: 870px;
     background-position: center top;
     width: 100vw;
+    padding-top: 50px;
     margin-bottom: 200px;
     transition: .6s;
     
@@ -142,14 +144,15 @@ a:hover {
 
 section#paralax > h1{
     display: block;
-    text-align: left;
-    color: #c1121e83 ; 
+    text-align: center;
+    color:#d93741 ; 
+    
     
     font-family:  var(--fonte-destaque);
     margin: auto;
     font-weight: lighter;
     background-color: rgba(0, 0, 0, 0.072);
-    width: 100vw;
+    width: 80%;
     height: 1%;
     padding: 40px;
 }
@@ -172,6 +175,7 @@ main p {
 
 main {
     max-width: 1200px;
+    border-radius: 50px;
 }
 
 main h1 {
@@ -188,25 +192,32 @@ main h2#video {
 
 
 
-#menu ul {
-        display: flex; 
+nav#menu ul{
+    display: flex;
+    
+    
+    justify-content: flex-start;
+    
+    text-align: center;
+    font-size: 1em;
         
-        gap: 10px;
-        
-        
-       
-        
-    }
+    
+    
+}
 
 nav#menu {
 position: fixed;  
 z-index: 9999;
+border-radius: 5px;
+
+
 
      
-display: block; 
+display: flex; 
 height: 3vh;
     
-padding: 5px 5px;
+padding: 3px 3px;
+
     
     
 font-weight: bold;
