@@ -65,7 +65,8 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    background-position: bottom;
+    background-position: center;
+    
     margin: 0px;
     padding: 0px;
 
@@ -97,7 +98,7 @@ header {
 
     /*alinhar os itens e centralizar horizontal e vertical*/
     display:flex;    
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
    
 }
@@ -177,7 +178,7 @@ nav#menu {
     left: 0;
     z-index: 9999;
     box-shadow:0 4px 20px rgba(193, 18, 31, 0.25);
-    background: linear-gradient(200deg,#C1121F,  #ff416c);
+    background: linear-gradient(200deg,#c1121e,  #dc2d56);
     width: 100%;
     padding: 20px 1px;
     height: 125px;
