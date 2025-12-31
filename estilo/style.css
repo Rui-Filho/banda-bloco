@@ -329,11 +329,11 @@ main h1 {
 main h2 {
     color:var(--cor-red1);
     font-family: var(--fonte-destaque);
-    font-size: .8em;
+    font-size: .9em;
     font-weight: lighter;
     margin: 50px 0;
     text-align: center;
-    letter-spacing: .2em;
+    letter-spacing: .3em;
 }
 
 
@@ -346,12 +346,12 @@ main h2#video {
 
 main h3 {
     color: var(--cor-white);
-    font-family: var(--fonte-padrao);
+    font-family: var(--fonte-destaque);
     font-size: .8em;
     font-weight: normal;
     text-align: center;
     margin: 20px 0;
-    letter-spacing: .1em;
+    letter-spacing: .2em;
 }
 
 main p {
