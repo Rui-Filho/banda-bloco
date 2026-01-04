@@ -308,8 +308,8 @@ main, section {
 
 main h1 {
     color: var(--cor-red1);
-    font-family: var(--fonte-destaque);
-    font-weight: lighter;
+    font-family: var(--fonte-padrao);
+    font-weight: bold;
     padding: 2px;
     margin: 15px;
     font-size: .8em;
@@ -328,12 +328,12 @@ main h1 {
 
 main h2 {
     color:var(--cor-red1);
-    font-family: var(--fonte-destaque);
-    font-size: .9em;
-    font-weight: lighter;
+    font-family: var(--fonte-padrao);
+    font-size: .8em;
+    font-weight: bold;
     margin: 50px 0;
     text-align: center;
-    letter-spacing: .3em;
+    letter-spacing: .4em;
 }
 
 
@@ -346,12 +346,12 @@ main h2#video {
 
 main h3 {
     color: var(--cor-white);
-    font-family: var(--fonte-destaque);
+    font-family: var(--fonte-padrao);
     font-size: .8em;
     font-weight: normal;
     text-align: center;
     margin: 20px 0;
-    letter-spacing: .2em;
+    letter-spacing: .1em;
 }
 
 main p {
@@ -389,7 +389,7 @@ main img.img2 {
     margin: auto;
     width: 300px;
     padding: 2px;
-    border: 1px solid #F29849);
+    border: 1px solid (#F29849);
     box-sizing: border-box;
     box-shadow: 0px 0px 0px 1px #6A6E3B;
     border-radius: 12px;
