@@ -486,7 +486,7 @@ div.video > iframe {
     font-weight: normal;
     color: var(--cor-white);
     letter-spacing: .2em;
-    padding-bottom: 1rem;
+    padding-bottom: 2rem;
     
     
 }
@@ -516,6 +516,7 @@ div#faleconosco {
     max-width: 700px;
     height: 78vh;
     margin-bottom: 100px;
+    padding-bottom: 2rem;
     
     
     
@@ -537,6 +538,7 @@ section#fale {
     box-shadow: 0px 0px 5px #A6615B;
     transition: width 1s, height 1s;
     transition-timing-function: ease;
+    padding-bottom: 2rem;
     
     
 
@@ -559,6 +561,7 @@ section#fale > div#formulario {
     padding: 10px;    
 
     height: 100%;
+    padding-bottom: 1rem;
 
 
 }
