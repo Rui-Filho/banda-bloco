@@ -2,10 +2,11 @@
 
 
 :root {
-    --cor-red1: #C1121F;  
-    --cor-red2: #7A0B0B;  
-    --cor-white: #E6EAF0;
-    --cor-black: #101923;
+    --cor-terracota: #A6615B;  
+    --cor-vinhoescuro:#59201B;  
+    --cor-white: #F2F2F2;
+    --cor-black: #0D0D0D;
+    --cor-grey: #84878C;
     
 
     
@@ -112,6 +113,11 @@ header > a > img {
     max-width: 30px;
 }
 
+header > a > img:hover{
+    max-width: 32px;
+    
+}
+
 header > h1 {
     font-size: 1.3em;
     letter-spacing:.2em;
@@ -145,15 +151,16 @@ a:hover {
 section#paralax > h1{
     display: block;
     text-align: center;
-    color:#d93742c6 ; 
+    color:#84878C ; 
     
     
     font-family:  var(--fonte-destaque);
+    font-size: 30px;
     margin: auto;
     font-weight: lighter;
     background-color: rgba(0, 0, 0, 0.072);
-    width: 80%;
-    height: 1%;
+    width: 95%;
+    height: 95%;
     padding: 40px;
     margin-top: 15px;
 }
@@ -200,7 +207,7 @@ nav#menu ul {
     
     
     font-size: .92em;
-    f
+    
     
     
     
@@ -242,6 +249,7 @@ a.fontnav {
 
 a.fontnav:hover{
     font-weight: bolder;
+    font-size: .91em;
     
     transition: 1s;
 }
