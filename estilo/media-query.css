@@ -37,6 +37,7 @@
         width: 100%;
         margin-left: 30px;
         height: 50%;
+        padding-bottom: 3rem;
     }
 
     section#fale > div#imagem{
@@ -273,7 +274,8 @@ div#faleconosco {
 section#fale {
         width: 100%;
         
-        min-height: 47%;
+        max-height: 350px;
+        min-height: 300px;
         padding-bottom: 1rem;
     }
 
