@@ -245,8 +245,38 @@ a:hover {
     
 }
 
-section#paralax > h1 {
-    display: none;
+section#paralax > h1{
+    display: block;
+    text-align: center;
+    color:#A6615B ; 
+    
+    
+    font-family:  var(--fonte-destaque);
+    font-size: 20px;
+    margin: auto;
+    font-weight: lighter;
+    background-color: rgba(0, 0, 0, 0.043);
+    width: 95%;
+    height: 95%;
+    padding: 40px;
+    margin-top: 30px;
+}
+
+
+section#paralax {
+    background-color: var(--cor-black);
+    background-image: url(../imagens/testeparalaxnovo.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    background-position: center center;
+    width: 100vw;
+    padding-top: 5px;
+    
+    transition: .3s;
+    
+    
+
 }
 
 /* ===========================
@@ -386,6 +416,9 @@ main a:hover {
     color: var(--cor-grey);
     font-size: .9em;
 }
+
+
+
 
 main img.img2 {
     display: block;

@@ -71,6 +71,47 @@
         width: 100%;
     }
 
+    /* Flexibox na Discografia*/
+#containerDisco {
+    
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#itemDiscoBuzinas {
+    
+    width: 500px;
+    height: 599px;
+    
+}
+
+#itemDiscoBeleza {
+
+    
+    width: 500px;
+    
+}
+
+#conteinerVideos {
+    display: flex;
+    flex-flow: row wrap;
+    
+    padding: 20px;
+
+
+}
+
+.itemVideos {
+
+    
+    padding: 20px;
+    width: 300px;
+    flex: auto;
+
+}
+
     div#faleconosco {
         width: 100%;
     }
@@ -143,7 +184,7 @@ a:hover {
     background-position: center top;
     width: 100vw;
     padding-top: 50px;
-    margin-bottom: 200px;
+    margin-bottom: 2px;
     transition: .6s;
     
     
@@ -153,7 +194,7 @@ a:hover {
 section#paralax > h1{
     display: block;
     text-align: center;
-    color:#84878C ; 
+    color:#A6615B; 
     
     
     font-family:  var(--fonte-destaque);
@@ -236,6 +277,49 @@ font-family: va(--fonte-padrao);
 
     
     
+}
+
+
+
+/* Flexibox na Discografia*/
+#containerDisco {
+    
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#itemDiscoBuzinas {
+    
+    width: 500px;
+    height: 598px;
+    
+}
+
+#itemDiscoBeleza {
+
+    
+    width: 500px;
+    
+}
+
+#conteinerVideos {
+    display: flex;
+    flex-flow: row wrap;
+    
+    padding: 20px;
+
+
+}
+
+.itemVideos {
+
+    
+    padding: 20px;
+    width: 400px;
+    flex: auto;
+
 }
 
 
