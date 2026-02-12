@@ -177,7 +177,7 @@ a:hover {
 
     section#paralax {
     background-color: var(--cor-black);
-    background-image: url(../imagens/testeparalaxnovo.jpg);
+    background-image: url(../imagens/paralaxdesktop.webp);
     background-size: cover;
     background-attachment: fixed;
     height: 870px;

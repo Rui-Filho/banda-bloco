@@ -62,7 +62,7 @@ html,body {
 body {
     background-color: var(--cor-black);
     font-family: var(--fonte-padrao);
-    background: url(../imagens/fundobody2.jpg);
+    background: url(../imagens/fundobody.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -86,7 +86,7 @@ header {
     z-index: 9999;
 
     background-color:var(--cor-black); 
-    background-image: url(../imagens/headerback.jpg);
+    background-image: url(../imagens/headerback.webp);
     
     background-repeat: no-repeat;
     background-size: cover;
@@ -265,7 +265,7 @@ section#paralax > h1{
 
 section#paralax {
     background-color: var(--cor-black);
-    background-image: url(../imagens/testeparalaxnovo.jpg);
+    background-image: url(../imagens/paralaxmovel.webp);
     background-size: cover;
     background-attachment: fixed;
     height: 100vh;
@@ -335,9 +335,7 @@ main {
     
 }
 
-main, section {
-    margin-top: 60px;
-}
+
 
 main h1 {
     color: var(--cor-terracota);
@@ -580,7 +578,7 @@ section#fale {
 section#fale > div#imagem {
     display: block;        
     height: 200px;
-    background-image: url(../imagens/testefale2.jpg);
+    background-image: url(../imagens/testefale2.webp);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
