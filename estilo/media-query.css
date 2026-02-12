@@ -56,13 +56,28 @@
 
 @media screen and (min-width: 992px) and (max-width: 1200px) {
 
-    .carousel-item.active {
-        width: 450px;
-    }
+   .carousel-item.active {
+    display: none;
+    
+    
+}
 
-    .carousel-item.active:hover{
-        width: 470px;
-    }
+
+#containerFotos {
+    padding: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.itemFoto {
+    padding: 5px;
+    border-radius: 10px;
+    width: 130px;
+    flex: 1 1 150px;
+
+}
 
 
 
@@ -208,13 +223,31 @@ section#paralax > h1{
     margin-top: 15px;
 }
 
-.carousel-item.active {
-        width: 400px;
-    }
 
-    .carousel-item.active:hover{
-        width: 440px;
-    }
+.carousel-item.active {
+    display: none;
+    
+    
+}
+
+
+#containerFotos {
+    padding: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.itemFoto {
+    padding: 5px;
+    border-radius: 10px;
+    width: 100px;
+    flex: 1 1 200px;
+
+}
+
+
 
 
 
@@ -307,6 +340,8 @@ font-family: va(--fonte-padrao);
 #conteinerVideos {
     display: flex;
     flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
     
     padding: 20px;
 
@@ -317,8 +352,8 @@ font-family: va(--fonte-padrao);
 
     
     padding: 20px;
-    width: 400px;
-    flex: auto;
+    
+    flex: 1 1 350px;
 
 }
 

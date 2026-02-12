@@ -283,6 +283,11 @@ section#paralax {
    CARROSSEL
 =========================== */
 
+
+#containerFotos {
+    display: none;
+}
+
 .carousel {
     position: relative;
     width: 99%;
@@ -325,7 +330,7 @@ section#paralax {
 
 main {
     min-width: 250px;
-    max-width: 768px;
+    max-width: 1000px;
     margin: auto;
     background: var(--cor-black);
     padding: 5px;
