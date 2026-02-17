@@ -190,37 +190,46 @@ a:hover {
     
 }
 
-    section#paralax {
+    #paralax {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
     background-color: var(--cor-black);
     background-image: url(../imagens/paralaxdesktop.webp);
     background-size: cover;
-    background-attachment: fixed;
-    height: 870px;
+    background-attachment: fixed;    
+    background-position: center top;
+
+    height: 900px;
     background-position: center top;
     width: 100vw;
-    padding-top: 50px;
     margin-bottom: 2px;
-    transition: .6s;
+    
+    
+    
     
     
 
 }
 
-section#paralax > h1{
-    display: block;
-    text-align: center;
+div.itemParalax{
+    
+    
     color:#A6615B; 
     
     
+    
     font-family:  var(--fonte-destaque);
-    font-size: 30px;
-    margin: auto;
+    font-size: 3em;
+    
     font-weight: lighter;
-    background-color: rgba(0, 0, 0, 0.072);
-    width: 95%;
-    height: 95%;
+    background-color: rgba(0, 0, 0, 0.949);
+    
     padding: 40px;
-    margin-top: 15px;
+    margin: 0;
+    
 }
 
 
