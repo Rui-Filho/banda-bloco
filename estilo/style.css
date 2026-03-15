@@ -314,6 +314,7 @@ a:hover {
     margin: 0;
 }
 
+
 /* ===========================
    CARROSSEL
 =========================== */
@@ -362,6 +363,13 @@ a:hover {
 /* ===========================
    MAIN
 =========================== */
+
+
+#textoPrincipal::first-letter {
+    font-size: 2em;
+    font-weight: bold;
+
+}
 
 main {
     min-width: 250px;
@@ -455,7 +463,16 @@ main a:hover {
     font-size: .9em;
 }
 
+.textoDisco {
+    color: #E6EAF0;
+    max-width: 350px;
+    margin: auto;
+    text-align: center;
+    line-height: 1.6;
+    opacity: 0.8;
+    margin-bottom: 30px;
 
+}
 
 
 main img.img2 {

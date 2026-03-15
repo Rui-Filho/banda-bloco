@@ -79,6 +79,21 @@
 
 }
 
+#textoPrincipal {
+
+
+    column-count: 2;
+    column-gap: 50px;
+    column-rule: 1px solid #84878C;
+    text-align: justify;
+}
+
+#textoPrincipal::first-letter {
+    font-size: 2em;
+    font-weight: bold;
+
+}
+
 
 
 
@@ -98,7 +113,7 @@
 #itemDiscoBuzinas {
     
     width: 500px;
-    height: 599px;
+    height: 670px;
     
 }
 
@@ -257,6 +272,22 @@ div.itemParalax{
 }
 
 
+#textoPrincipal {
+
+
+    column-count: 2;
+    column-gap: 50px;
+    column-rule: 1px solid #84878C;
+    text-align: justify;
+}
+
+#textoPrincipal::first-letter {
+    font-size: 2em;
+    font-weight: bold;
+
+}
+
+
 
 
 
@@ -335,7 +366,9 @@ font-family: va(--fonte-padrao);
 #itemDiscoBuzinas {
     
     width: 500px;
-    height: 598px;
+    height: 675px;
+    
+    
     
 }
 
