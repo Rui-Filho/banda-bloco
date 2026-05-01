@@ -240,7 +240,7 @@ a {
     padding: 5px;
     padding-left: 10px;
     font-weight: normal;
-    transition-duration: 0.5s;
+    transition-duration: 0.7s;
     font-family: var(--fonte-padrao);
     border-radius: 15px;
     text-align: center;
@@ -252,7 +252,7 @@ a:hover {
     
     color: var(--cor-black);    
     transition: .9s;
-    font-size: .99em;
+    font-size: 1.1em;
     font-weight: bold;
     
 }
