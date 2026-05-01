@@ -252,7 +252,7 @@ a:hover {
     
     color: var(--cor-black);    
     transition: .9s;
-    font-size: 1.1em;
+    font-size: 1em;
     font-weight: bold;
     
 }
