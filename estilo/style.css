@@ -71,7 +71,7 @@ html,body {
 body {
     background-color: var(--cor-black);
     font-family: var(--fonte-padrao);
-    background: url(../imagens/fundobody.webp);
+    background-color: var(--cor-black);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
