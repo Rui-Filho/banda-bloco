@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg1"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1">
+    <linearGradient
+       id="swatch21">
+      <stop
+         style="stop-color:#ff5555;stop-opacity:0.95044304;"
+         offset="0"
+         id="stop21" />
+    </linearGradient>
+    <linearGradient
+       id="swatch20">
+      <stop
+         style="stop-color:#ff5555;stop-opacity:0.95044304;"
+         offset="0"
+         id="stop20" />
+    </linearGradient>
+    <linearGradient
+       id="swatch14">
+      <stop
+         style="stop-color:#ff5555;stop-opacity:0.95044304;"
+         offset="0"
+         id="stop14" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient6">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop7" />
+      <stop
+         style="stop-color:#000000;stop-opacity:0;"
+         offset="1"
+         id="stop8" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient1">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop1" />
+      <stop
+         style="stop-color:#000000;stop-opacity:0;"
+         offset="1"
+         id="stop2" />
+    </linearGradient>
+    <linearGradient
+       xlink:href="#swatch21"
+       id="linearGradient21"
+       x1="38.824585"
+       y1="146.16602"
+       x2="174.73538"
+       y2="146.16602"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <g
+     id="layer1">
+    <g
+       id="g21"
+       transform="matrix(1.3719982,0,0,1.3628533,-40.525101,-54.819813)"
+       style="opacity:0.99">
+      <ellipse
+         style="opacity:1;fill:#000000;fill-rule:evenodd;stroke:url(#linearGradient21);stroke-width:4.04045;stroke-dasharray:none;stroke-opacity:0.950443"
+         id="path2"
+         cx="106.77998"
+         cy="146.16602"
+         rx="65.935173"
+         ry="65.059921" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:47.9688px;font-family:ALDITH;-inkscape-font-specification:ALDITH;fill:#ff5555;fill-rule:evenodd;stroke-width:10.611"
+         x="83.747643"
+         y="160.18652"
+         id="text3"
+         transform="scale(1.0599202,0.94346727)"><tspan
+           id="tspan3"
+           x="83.747643"
+           y="160.18652"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:ALDITH;-inkscape-font-specification:ALDITH;fill:#ff5555;stroke-width:10.611">B</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:44.2646px;font-family:ALDITH;-inkscape-font-specification:ALDITH;fill:#ff5555;fill-rule:evenodd;stroke-width:9.79156"
+         x="67.036476"
+         y="226.25545"
+         id="text4"
+         transform="scale(1.3187497,0.75829399)"><tspan
+           id="tspan4"
+           x="67.036476"
+           y="226.25545"
+           style="fill:#ff5555;stroke-width:9.79156">L</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:42.5034px;font-family:ALDITH;-inkscape-font-specification:ALDITH;fill:#ff5555;fill-rule:evenodd;stroke-width:9.40197"
+         x="88.379486"
+         y="178.1236"
+         id="text5"
+         transform="matrix(0.98504488,-0.07196683,0.06432414,1.0104827,0,0)"><tspan
+           id="tspan5"
+           x="88.379486"
+           y="178.1236"
+           style="fill:#ff5555;stroke-width:9.40197">O</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.0416px;font-family:ALDITH;-inkscape-font-specification:'ALDITH, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;opacity:1;fill:#ff5555;fill-rule:evenodd;stroke:#f4505b;stroke-width:1.68723;stroke-dasharray:none;stroke-opacity:0.950443"
+         x="57.77951"
+         y="253.147"
+         id="text14"
+         transform="scale(1.574579,0.63509041)"><tspan
+           id="tspan14"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.0416px;font-family:ALDITH;-inkscape-font-specification:'ALDITH, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ff5555;stroke-width:1.68723"
+           x="57.77951"
+           y="253.147">I</tspan></text>
+      <ellipse
+         style="opacity:1;fill:#ff5555;fill-rule:evenodd;stroke:#f4505b;stroke-width:2.38646;stroke-dasharray:none;stroke-opacity:0.950443"
+         id="path14"
+         cx="104.19404"
+         cy="150.75789"
+         rx="0.82699752"
+         ry="0.57161993" />
+    </g>
+  </g>
+</svg>

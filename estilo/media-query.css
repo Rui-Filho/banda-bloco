@@ -190,12 +190,15 @@
     
 }
 
+
+
 header > a > img {
-    max-width: 30px;
+    max-width: 38px;
+    transition: .3s;
 }
 
 header > a > img:hover{
-    max-width: 32px;
+    max-width: 41px;
     
 }
 
@@ -210,6 +213,17 @@ a:hover {
     color: var(--cor-black);    
     transition: .9s;
     font-size: .9em;
+    
+}
+
+.img4top {
+    
+    
+    
+    max-width: 17px;      
+    padding-right: 20px;
+    
+    
     
 }
 
@@ -335,11 +349,11 @@ main h2#video {
 
 nav#menu ul {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around; 
+    gap: 20px; 
+    padding: 10px;    
     
-    
-    
-    font-size: .92em;
+    font-size: 0.9em;
     
     
     
@@ -352,7 +366,8 @@ nav#menu ul {
 nav#menu {
 position: fixed;  
 z-index: 9999;
-border-radius: 5px;  
+border-radius: 5px;
+background-color: #101923;  
 
 display: flex;
 flex-flow: column;

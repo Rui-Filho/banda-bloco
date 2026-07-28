@@ -37,7 +37,7 @@
     --cor-vinhoescuro:#59201B;  
     --cor-white: #F2F2F2;
     --cor-black: #0D0D0D;
-    --cor-grey: #84878C;
+    --cor-grey: #333333;
     
 
     
@@ -70,12 +70,8 @@ html,body {
 
 body {
     background-color: var(--cor-black);
-    font-family: var(--fonte-padrao);
-    background-color: var(--cor-black);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
+    font-family: var(--fonte-padrao);  
+    
     
     margin: 0px;
     padding: 0px;
@@ -94,21 +90,20 @@ header {
     width: 100%;
     z-index: 9999;
 
-    background-color:var(--cor-black); 
-    background-image: url(../imagens/headerback.webp);
+    background-color:var(--cor-black);    
     
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: bottom;
+    
+    
     width: 100vw;
     padding: 0px;
     margin: 0px;
     height: 60px;
     border-bottom: solid 1px var(--cor-vinhoescuro);
+    gap: 10px;
 
     /*alinhar os itens e centralizar horizontal e vertical*/
     display:flex;    
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
    
 }
@@ -116,10 +111,12 @@ header {
 
 
 header > a > img {
-    display: flexbox;    
-    max-width: 36px;
+    display: flexbox;      
+    max-width: 33px;
     padding: 0px;
     margin: 0px;
+    aspect-ratio: 1/1;
+    object-fit: contain;
 }
 
 
@@ -139,10 +136,13 @@ header > h1 {
     
 }
 
-.img4top {
-    max-width: 15px;
-    text-align: left;    
-    padding: 12px;
+.img4top {  
+    
+    
+    
+    max-width: 15px;      
+    padding: 5px;
+    
     
 }
 
@@ -151,12 +151,13 @@ header > h1 {
 =========================== */
 
 .menu-btn {
-    font-size:23px;
+    font-size:30px;
     padding-right: 15px;
     background: none;
     border: none;
     cursor: pointer;
-    color: var(--cor-terracota);      
+    color: var(--cor-terracota); 
+    gap: 10px;     
      
     transition: .5s;
     
@@ -191,7 +192,7 @@ nav#menu {
     z-index: 9999;
     box-shadow: #0D0D0D;
     
-    background: linear-gradient(50deg,#71433f,  #b4483e,#A6615B);
+    background: linear-gradient(50deg,#b5715f,  #e28981,#A6615B);
     width: 100%;
     padding: 20px 1px;
     height: 125px;

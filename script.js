@@ -1,8 +1,8 @@
 /* CÓDIGO PARA ENVIAR O FORMULÁRIO DE MENSAGEM AO EMAIL DA BLOCO*/
 
-const PUBLIC_KEY = "Qyisl1ChcK1cUF1cj";
-const SERVICE_ID = "service_4ntim3e";
-const TEMPLATE_ID = "template_xkjgb5e";
+const PUBLIC_KEY = "Qyisl1ChcK1cUF1cj"
+const SERVICE_ID = "service_4ntim3e"
+const TEMPLATE_ID = "template_xkjgb5e"
 
 
 const form = document.querySelector('#form-contato');
