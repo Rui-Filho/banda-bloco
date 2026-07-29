@@ -20,6 +20,8 @@
 
 @media screen and (min-width: 768px)and (max-width:992px){
 
+   
+
     .carousel-item.active {
         width: 400px;
     }
@@ -54,13 +56,15 @@
 
 }
 
-@media screen and (min-width: 992px) and (max-width: 1200px) {
+@media screen and (min-width: 992px) and (max-width: 1000px) {
 
-   .carousel-item.active {
-    display: none;
+
+
     
-    
-}
+
+
+
+
 
 
 #containerFotos {
@@ -173,20 +177,57 @@
     }
 }
 
-@media screen and (min-width:1200px) {
+@media screen and (min-width:1000px) {
 
-    header {   
+
+    nav#menu {
+    display: flex; 
+    
+
+    margin-top:60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;  
+    
+    
+    width: 100%;
+    padding: 20px 1px;
+    height: 5%;
+    text-align: center;
+    font-weight: bolder;
+    background-color: #0D0D0D;
+    
+    
+    transition-duration: 0.5s;
+    font-family: var(--fonte-destaque);
+    border-radius: 1px;    
+    transition: 0.3s;
+    padding-bottom: 5px;
+}
+
+nav#menu a {
+    color: #A6615B;
+    font-size: 1em;
+    font-weight: lighter;
+}
+
+nav#menu > ul{
+    height: 10%;
+    
+
+}
+
+header {   
         
-        background-color: var(--cor-black);
-        background-image: none;
-
+  background-color: var(--cor-black);
+     
+  width: 100vw;  
+  height: 7%;   
     
-        width: 100vw; 
-         
-    
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
     
 }
 
@@ -270,6 +311,8 @@ div.itemParalax{
 }
 
 
+
+
 .carousel-item.active {
     display: none;
     
@@ -324,7 +367,7 @@ div.itemParalax{
 
 main p {
     
-    font-size: .9em;
+    font-size: 1em;
     
 }
 
@@ -349,40 +392,16 @@ main h2#video {
 
 nav#menu ul {
     display: flex;
-    justify-content: space-around; 
+    justify-content: space-between; 
     gap: 20px; 
     padding: 10px;    
     
     font-size: 0.9em;
     
-    
-    
-    
-        
-    
+
     
 }
 
-nav#menu {
-position: fixed;  
-z-index: 9999;
-border-radius: 5px;
-background-color: #101923;  
-
-display: flex;
-flex-flow: column;
-justify-content: center;
-
-height: .9vh;
-
-padding: 10px;    
-
-transition-duration: 0.5s;
-font-family: va(--fonte-padrao); 
-
-    
-    
-}
 
 
 
@@ -440,14 +459,10 @@ a.fontnav {
     font-size: .9em;
     font-weight: lighter;
     letter-spacing: .3em;
+    transition: 0.5s;
 }
 
-a.fontnav:hover{
-    font-weight: bolder;
-    font-size: .91em;
-    
-    transition: 1s;
-}
+
 
 div#video > iframe{
     width: 20%;
@@ -488,5 +503,5 @@ section#fale {
 
 
 
-    
+
 }

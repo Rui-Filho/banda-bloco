@@ -90,7 +90,7 @@ header {
     width: 100%;
     z-index: 9999;
 
-    background-color:var(--cor-black);    
+    background-color:var(--cor-black);   
     
     
     
@@ -98,7 +98,7 @@ header {
     padding: 0px;
     margin: 0px;
     height: 60px;
-    border-bottom: solid 1px var(--cor-vinhoescuro);
+    border-bottom: solid 1px var(--cor-terracota);
     gap: 10px;
 
     /*alinhar os itens e centralizar horizontal e vertical*/
@@ -112,7 +112,7 @@ header {
 
 header > a > img {
     display: flexbox;      
-    max-width: 33px;
+    max-width:40px;
     padding: 0px;
     margin: 0px;
     aspect-ratio: 1/1;
@@ -190,9 +190,10 @@ nav#menu {
     top: 0;
     left: 0;
     z-index: 9999;
-    box-shadow: #0D0D0D;
     
-    background: linear-gradient(50deg,#b5715f,  #e28981,#A6615B);
+    
+    background-color: #9f5c56;
+    
     width: 100%;
     padding: 20px 1px;
     height: 125px;
@@ -203,26 +204,29 @@ nav#menu {
     font-family: var(--fonte-destaque);
     border-radius: 2px;    
     transition: 0.3s;
-    padding-bottom: 85px;
-
-    
+    padding-bottom: 85px; 
     
     
 }
 
-nav > ul > li{
+nav#menu a {
+    color: #0D0D0D;
+}
+
+nav#menu > ul > li{
     
     padding: 1px;
     margin-bottom: 6px;
-    font-size: .7em;
+    font-size: 0.7em;
     font-weight: bolder;
     letter-spacing: .2em;
     text-decoration: none;
-    list-style: none;
-    color: var(--cor-vinhoescuro);
+    list-style: none;  
     
 
 }
+
+
 
 
 
@@ -292,8 +296,9 @@ a:hover {
     color:#A6615B ;     
     
     font-family: var(--fonte-destaque);
-    font-size: 2em;    
+    font-size: 4em;    
     font-weight: normal;
+    letter-spacing: .3em;
     
     
 
@@ -312,7 +317,7 @@ a:hover {
 
    
     padding: 40px;
-    margin: 0;
+    margin: 10px;
 }
 
 
@@ -636,7 +641,7 @@ section#fale {
 section#fale > div#imagem {
     display: block;        
     height: 200px;
-    background-image: url(../imagens/testefale2.webp);
+    background-image: url(../imagens/pexels-maksgelatin-5605061.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -754,11 +759,11 @@ footer {
     background-color: var(--cor-black);
     color: var(--cor-white);
     text-align: center;
-    font-size: 0.7em;
+    font-size: 0.8em;
     padding: 10px;
     font-family: var(--fonte-destaque);
     letter-spacing: 1px;
-    border-top: 1px solid var(--cor-vinhoescuro);
+    border-top: 1px solid var(--cor-terracota);
 }
 
 footer > p > a {

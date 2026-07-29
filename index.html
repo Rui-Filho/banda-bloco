@@ -30,7 +30,11 @@
             
             </div> 
 
-            <button class="menu-btn" onclick="toggleMenu()">☰</button>
+            
+
+            <button id="menuBtn" class="menu-btn" onclick="toggleMenu()">
+                 <i class="fa-solid fa-bars"></i>
+            </button>
         
         
     </header>
@@ -355,7 +359,8 @@
     
 
     <footer>
-        <p>Todos direitos reservados - Desenvolvido por<a href="https://www.instagram.com/rui.reinehr?igsh=d3Bhd3N4OWxiZjd0" target="_blank">@ruidabloco</a></p>
+        <p>© 2026 BLOCO • Desenvolvido por 
+<a href="https://www.instagram.com/rui.reinehr?igsh=d3Bhd3N4OWxiZjd0" target="_blank">@ruidabloco</a></p>
     </footer>
 
 
@@ -453,9 +458,22 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 
     
-   function toggleMenu() {
+  /* function toggleMenu() {
     const menu = document.getElementById("menu");
     menu.classList.toggle("active");
+}*/
+
+function toggleMenu() {
+    const menu = document.getElementById("menu");
+    const botao = document.getElementById("menuBtn");
+
+    menu.classList.toggle("active");
+
+    if (menu.classList.contains("active")) {
+        botao.innerHTML = '<i class="fa-solid fa-xmark"></i>';
+    } else {
+        botao.innerHTML = '<i class="fa-solid fa-bars"></i>';
+    }
 }
 
 // Suavizar rolagem dos links internos
