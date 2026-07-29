@@ -296,14 +296,14 @@ a:hover {
     color:#A6615B ;     
     
     font-family: var(--fonte-destaque);
-    font-size: 4em;    
+    font-size: 2em;    
     font-weight: normal;
     letter-spacing: .3em;
     
     
 
 
-    background: linear-gradient(90deg,#A6615B,
+    background: linear-gradient(110deg,#A6615B,
         #e8b7b1,
         #9f5c56,
         #A6615B);
