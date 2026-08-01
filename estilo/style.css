@@ -37,7 +37,7 @@
     --cor-vinhoescuro:#59201B;  
     --cor-white: #F2F2F2;
     --cor-black: #0D0D0D;
-    --cor-grey: rgb(21, 20, 20);
+    --cor-blackFosco: #151414;
     
 
     
@@ -70,9 +70,8 @@ html,body {
 =========================== */
 
 body {
-    background-color: rgb(21, 20, 20);
-    font-family: var(--fonte-padrao);  
-    
+    background-color: var(--cor-blackFosco);
+    font-family: var(--fonte-padrao);      
     
     margin: 0px;
     padding: 0px;
@@ -93,7 +92,7 @@ header {
     width: 100%;
     z-index: 9999;
 
-    background-color:var(--cor-black);   
+    background-color:var(--cor-blackFosco);   
     
     
     
@@ -213,7 +212,7 @@ nav#menu {
 }
 
 nav#menu a {
-    color: #0D0D0D;
+    color: var(--cor-black);
 }
 
 nav#menu > ul > li{
@@ -349,18 +348,19 @@ a:hover {
 .carousel-item.active {
     display: block;
     opacity: 0.1px;
-    border: .11px solid var(--cor-grey);
+    border: .11px solid var(--cor-terracota);
     width: 290px;    
     margin: auto;
     cursor: pointer;
     border-radius: 8px;  
+    transition: 1s;
     
     
 }
 
 .carousel-item.active:hover {
     width: 320px;
-    transition: 1s;
+    
 
 }
 
@@ -384,7 +384,7 @@ main {
     min-width: 250px;
     max-width: 1000px;
     margin: auto;
-    background: rgb(21, 20, 20);
+    background:var(--cor-blackFosco);
     padding: 5px;
     box-shadow: 0px 0px 1px var(--cor-terracota);
     margin-bottom: 30px;
@@ -434,7 +434,7 @@ main h2#video {
 }
 
 main h3 {
-    color: var(--cor-grey);
+    color: var(--cor-white);
     font-family: var(--fonte-padrao);
     font-size: .8em;
     font-weight: normal;
@@ -455,7 +455,7 @@ main p {
 }
 
 main strong {
-    color: var(--cor-grey);
+    color: var(--cor-white);
     font-weight: bold;
 }
 
@@ -469,12 +469,12 @@ main a {
 
 main a:hover {
     text-decoration: none;
-    color: var(--cor-grey);
+    color: var(--cor-terracota);
     font-size: .9em;
 }
 
 .textoDisco {
-    color: #E6EAF0;
+    color: var(--cor-white);
     max-width: 350px;
     margin: auto;
     text-align: center;
@@ -494,13 +494,14 @@ main img.img2 {
     box-sizing: border-box;
     box-shadow: 0px 0px 0px 1px #A6615B;
     border-radius: 12px;
+    transition: 2s;
 }
 
 main img.img2:hover{
-    border: 2px solid #59201B;
-    transition: 2s;
+    border: 2px solid #9f5c56;
+    
     box-sizing: border-box;
-    width: 305px;
+    
 
 }
 
@@ -512,7 +513,7 @@ main img.img2:hover{
 =========================== */
 
 div.video {
-    background-color: var(--cor-black);
+    background-color: var(--cor-blackFosco);
     margin: 0 -20px 30px -20px;
     padding: 20px;
     position: relative;
@@ -608,7 +609,7 @@ div.video > iframe {
 div#faleconosco {
     position: relative;
     font-family: var(--fonte-padrao),system-ui,Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background-color: var(--cor-black);
+    background-color: var(--cor-blackFosco);
     box-sizing: border-box;
     min-width: 300px;
     max-width: 700px;
@@ -629,7 +630,7 @@ section#fale {
     left: 50%;
     transform: translate(-50%,-50%);
     overflow: hidden;
-    background-color: var(--cor-black);
+    background-color: var(--cor-blackFosco);
     width: 275px;
     height: 580px;
     border-radius: 20px;
@@ -724,7 +725,7 @@ form#form-contato > input {
     width: 100%;
     margin: 2px;
 
-    background: #0D0D0D;
+    background:var(--cor-blackFosco);
     border: 1px solid #A6615B;
     color: #84878C;
     border-radius: 8px;
@@ -735,7 +736,7 @@ form#form-contato > input {
 form#form-contato > textarea {
     margin: 2px;
     width: 100%;
-    background: #0D0D0D;
+    background: var(--cor-blackFosco);
     border: 1px solid #A6615B;
     color: #84878C;
     border-radius: 8px;
@@ -760,7 +761,7 @@ p#status {
 =========================== */
 
 footer {
-    background-color: var(--cor-black);
+    background-color: var(--cor-blackFosco);
     color: var(--cor-white);
     text-align: center;
     font-size: 0.8em;
@@ -785,6 +786,6 @@ footer > p {
 
 footer > p > a:hover {
     
-    color:#e8b7b1;
+    color:#E6EAF0;
     
 }

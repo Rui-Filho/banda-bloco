@@ -6,7 +6,7 @@
     --cor-vinhoescuro:#59201B;  
     --cor-white: #F2F2F2;
     --cor-black: #0D0D0D;
-    --cor-grey: #84878C;
+    --cor-blackFosco: #151414;
     
 
     
@@ -207,7 +207,7 @@
     height: 5%;
     text-align: center;
     font-weight: bolder;
-    background-color: #0D0D0D;
+    background-color:var(--cor-blackFosco);
     
     
     transition-duration: 0.5s;
@@ -238,7 +238,7 @@ nav#menu > ul{
 
 header {   
         
-  background-color: var(--cor-black);
+  background-color: var(--cor-blackFosco);
      
   width: 100vw;  
   height: 7%;   
