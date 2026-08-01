@@ -349,7 +349,7 @@ a:hover {
     display: block;
     opacity: 0.1px;
     border: .11px solid var(--cor-terracota);
-    width: 290px;    
+    width: 250px;    
     margin: auto;
     cursor: pointer;
     border-radius: 8px;  
@@ -787,5 +787,6 @@ footer > p {
 footer > p > a:hover {
     
     color:#E6EAF0;
+    font-size: .9em;
     
 }

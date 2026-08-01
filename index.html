@@ -306,7 +306,7 @@
 
            <h1 id="contact"><i class="fa-solid fa-envelope"></i> CONTATO</h1>
 
-           <p class="final"> Email: blocorock@gmail.com <br>
+           <p class="final"> <i class="fa-regular fa-envelope"></i> : blocorock@gmail.com <br>
                 (51) 996648879 <br>
                 (51) 985245928 
             </p>
@@ -364,7 +364,7 @@
 
     <footer>
         <p>© 2026 BLOCO • Desenvolvido por 
-<a href=https://rui-filho.github.io/portfolio-rui/# target="_blank"> Rui Reinehr Filho </a></p>
+<a href=https://rui-filho.github.io/portfolio-rui/# target="_blank"> RUI REINEHR FILHO </a></p>
     </footer>
 
 
@@ -480,6 +480,7 @@ function toggleMenu() {
     }
 }
 
+
 // Suavizar rolagem dos links internos
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener("click", function(e) {
@@ -491,6 +492,9 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
         // Fechar menu mobile após clicar
         document.getElementById("menu").classList.remove("active");
+
+        // Voltar o ícone para o hambúrguer
+        document.getElementById("menuBtn").innerHTML = '<i class="fa-solid fa-bars"></i>';
     });
 });
 
