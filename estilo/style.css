@@ -586,6 +586,7 @@ div.video > iframe {
     color: var(--cor-white);
     letter-spacing: .2em;
     padding-bottom: 2rem;
+    height: 0;
     
     
 }
@@ -711,6 +712,8 @@ section#fale {
     overflow: hidden;
 
     box-shadow: 0 8px 25px rgba(0, 0, 0, .35);
+
+    
 }
 
 
@@ -720,6 +723,7 @@ section#fale {
 
 section#fale > div#imagem {
     display: block;
+    
 
     height: 200px;
 
