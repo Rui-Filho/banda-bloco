@@ -606,6 +606,8 @@ div.video > iframe {
 
 /* FALE CONOSCO*/
 
+/*
+
 div#faleconosco {
     position: relative;
     font-family: var(--fonte-padrao),system-ui,Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -688,7 +690,238 @@ section#fale > div#formulario textarea{
     font-size: .9em;
 }
 
-form#form-contato > input[type=submit] {
+*/
+
+/* Testando sugestões IA - Abaixo*/
+
+
+/* =========================================
+   FALE CONOSCO - FORMULÁRIO
+   ========================================= */
+
+
+/* Container principal */
+
+section#fale {
+    background: var(--cor-black);
+
+    border: 1px solid var(--cor-vinhoescuro);
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, .35);
+}
+
+
+/* =========================================
+   IMAGEM
+   ========================================= */
+
+section#fale > div#imagem {
+    display: block;
+
+    height: 200px;
+
+    background-image: url(../imagens/pexels-maksgelatin-5605061.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* =========================================
+   ÁREA DO FORMULÁRIO
+   ========================================= */
+
+section#fale > div#formulario {
+    display: block;
+
+    height: 100%;
+
+    padding: 10px 15px 20px;
+}
+
+
+/* =========================================
+   TÍTULO
+   ========================================= */
+
+div#formulario > h1 {
+    margin: 5px 0 20px;
+
+    font-family: var(--fonte-destaque);
+    font-size: 1.5em;
+    font-weight: lighter;
+
+    text-align: center;
+
+    color: var(--cor-terracota);
+}
+
+
+/* =========================================
+   FORMULÁRIO
+   ========================================= */
+
+form#form-contato {
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+
+/* =========================================
+   CAMPOS DE TEXTO
+   ========================================= */
+
+form#form-contato > input:not([type="submit"]) {
+
+    width: 100%;
+
+    box-sizing: border-box;
+
+    margin: 0;
+    padding: 12px;
+
+    background: var(--cor-blackFosco);
+
+    border: 1px solid var(--cor-vinhoescuro);
+    border-radius: 6px;
+
+    color: var(--cor-white);
+
+    font-family: var(--fonte-padrao);
+    font-size: .9em;
+
+    transition: .3s ease;
+}
+
+
+/* =========================================
+   TEXTAREA
+   ========================================= */
+
+form#form-contato > textarea {
+
+    width: 100%;
+
+    box-sizing: border-box;
+
+    margin: 0;
+    padding: 12px;
+
+    background: var(--cor-blackFosco);
+
+    border: 1px solid var(--cor-vinhoescuro);
+    border-radius: 6px;
+
+    color: var(--cor-white);
+
+    font-family: var(--fonte-padrao);
+    font-size: .9em;
+
+    resize: vertical;
+
+    transition: .3s ease;
+}
+
+
+/* =========================================
+   PLACEHOLDER
+   ========================================= */
+
+form#form-contato > input::placeholder,
+form#form-contato > textarea::placeholder {
+
+    color: #84878C;
+
+    opacity: 1;
+}
+
+
+/* =========================================
+   FOCO DOS CAMPOS
+   ========================================= */
+
+form#form-contato > input:not([type="submit"]):focus,
+form#form-contato > textarea:focus {
+
+    border-color: var(--cor-terracota);
+
+    outline: none;
+
+    box-shadow:
+        0 0 0 2px rgba(166, 97, 91, 0.15);
+}
+
+
+/* =========================================
+   BOTÃO ENVIAR
+   ========================================= */
+
+form#form-contato > input[type="submit"] {
+
+    display: block;
+
+    width: 50%;
+    height: 38px;
+
+    box-sizing: border-box;
+
+    margin: 8px auto 0;
+
+    padding: 0;
+
+    background: transparent;
+
+    color: var(--cor-terracota);
+
+    border: 1px solid var(--cor-terracota);
+    border-radius: 5px;
+
+    font-family: var(--fonte-padrao);
+    font-size: .9em;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: .3s ease;
+}
+
+
+/* =========================================
+   HOVER DO BOTÃO
+   ========================================= */
+
+form#form-contato > input[type="submit"]:hover {
+
+    background: var(--cor-terracota);
+
+    color: var(--cor-black);
+
+    box-shadow:
+        0 0 15px rgba(166, 97, 91, 0.25);
+}
+
+
+/* =========================================
+   STATUS
+   ========================================= */
+
+p#status {
+
+    color: var(--cor-white);
+
+    font-family: var(--fonte-padrao);
+
+    text-align: center;
+}
+
+/*  Testando sugestoes IA - FIM  */
+
+/*form#form-contato > input[type=submit] {
     display: block;
     margin: auto;
     font-size: 1em;
@@ -755,7 +988,7 @@ p#status {
 
 
     
-
+*/
 /* ===========================
    FOOTER
 =========================== */

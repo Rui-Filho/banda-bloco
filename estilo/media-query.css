@@ -35,32 +35,118 @@
         width: 100%;
     }
 
+     /* =========================================
+       FALE CONOSCO - TABLET
+       ========================================= */
+
+
+    /* Container principal */
+
     section#fale {
-        width: 100%;
-        margin-left: 30px;
-        height: 50%;
-        padding-bottom: 3rem;
+        width: 85%;
+        margin: 30px auto;
+
+        border-radius: 12px;
     }
 
-    section#fale > div#imagem{
-        float: left;
-        width: 30%;
-        height: 100%;
 
+    /* =========================================
+       IMAGEM
+       ========================================= */
+
+    section#fale > div#imagem {
+
+        height: 260px;
+
+        background-position: center center;
+        background-size: cover;
     }
+
+
+    /* =========================================
+       ÁREA DO FORMULÁRIO
+       ========================================= */
 
     section#fale > div#formulario {
-        float: right;
-        width: 67%;
+
+        padding: 20px 35px 30px;
+    }
+
+
+    /* =========================================
+       TÍTULO
+       ========================================= */
+
+    div#formulario > h1 {
+
+        font-size: 1.7em;
+
+        margin: 5px 0 25px;
+    }
+
+
+    /* =========================================
+       FORMULÁRIO
+       ========================================= */
+
+    form#form-contato {
+
+        gap: 12px;
+    }
+
+
+    /* =========================================
+       CAMPOS
+       ========================================= */
+
+    form#form-contato > input:not([type="submit"]),
+    form#form-contato > textarea {
+
+        padding: 13px;
+
+        font-size: .95em;
+
+        border-radius: 7px;
+    }
+
+
+    /* =========================================
+       TEXTAREA
+       ========================================= */
+
+    form#form-contato > textarea {
+
+        min-height: 150px;
+    }
+
+
+    /* =========================================
+       BOTÃO
+       ========================================= */
+
+    form#form-contato > input[type="submit"] {
+
+        width: 40%;
+        height: 40px;
+
+        margin-top: 10px;
+
+        font-size: .95em;
+    }
+
+
+    /* =========================================
+       STATUS
+       ========================================= */
+
+    p#status {
+
+        font-size: .95em;
     }
 
 }
 
-@media screen and (min-width: 992px) and (max-width: 1000px) {
-
-
-
-    
+@media screen and (min-width: 992px) and (max-width: 1000px) { 
 
 
 
@@ -154,28 +240,105 @@
 
 }
 
-    div#faleconosco {
-        width: 100%;
-    }
+  /* =========================================
+       FALE CONOSCO - TRANSIÇÃO PARA DESKTOP
+       ========================================= */
 
     section#fale {
-        width: 100%;
-        margin-left: 30px;
-        height: 55%;
+        width: 80%;
+        margin: 35px auto;
+
+        border-radius: 12px;
     }
+
+
+    /* =========================================
+       IMAGEM
+       ========================================= */
 
     section#fale > div#imagem {
-        float: right;
-        width: 50%;
-        height: 100%;
+        height: 280px;
+
+        background-position: center center;
+        background-size: cover;
     }
 
+
+    /* =========================================
+       FORMULÁRIO
+       ========================================= */
+
     section#fale > div#formulario {
-        float: left;
-        width: 47%;
-    
+        padding: 25px 45px 35px;
+    }
+
+
+    /* =========================================
+       TÍTULO
+       ========================================= */
+
+    div#formulario > h1 {
+        font-size: 1.8em;
+
+        margin: 5px 0 25px;
+    }
+
+
+    /* =========================================
+       CAMPOS
+       ========================================= */
+
+    form#form-contato {
+        gap: 12px;
+    }
+
+
+    form#form-contato > input:not([type="submit"]),
+    form#form-contato > textarea {
+
+        padding: 13px;
+
+        font-size: .95em;
+
+        border-radius: 7px;
+    }
+
+
+    /* =========================================
+       TEXTAREA
+       ========================================= */
+
+    form#form-contato > textarea {
+        min-height: 160px;
+    }
+
+
+    /* =========================================
+       BOTÃO
+       ========================================= */
+
+    form#form-contato > input[type="submit"] {
+
+        width: 35%;
+        height: 40px;
+
+        margin-top: 10px;
+
+        font-size: .95em;
+    }
+
+
+    /* =========================================
+       STATUS
+       ========================================= */
+
+    p#status {
+        font-size: .95em;
     }
 }
+
+
+
 
 @media screen and (min-width:1000px) {
 
@@ -493,33 +656,136 @@ a {
     font-size: .9em;
 }
 
-div#faleconosco {
-    margin: auto;
-    width: 100%;
-    padding-bottom: 1rem;
-}
 
-section#fale {
-        width: 100%;
-        
-        max-height: 350px;
-        min-height: 300px;
-        padding-bottom: 1rem;
+
+ /* =========================================
+       FALE CONOSCO - DESKTOP
+       ========================================= */
+
+    section#fale {
+
+        display: grid;
+        grid-template-columns: 45% 55%;
+
+        width: 85%;
+        max-width: 1100px;
+
+        margin: 40px auto;
+
+        border-radius: 12px;
+
+        overflow: hidden;
+
+        box-shadow:
+            0 10px 30px rgba(0, 0, 0, .40);
     }
 
-    section#fale > div#imagem{
-        float: left;
-        width: 30%;
+
+    /* =========================================
+       IMAGEM
+       ========================================= */
+
+    section#fale > div#imagem {
+
         height: 100%;
+        min-height: 500px;
 
+        background-position: center;
+        background-size: cover;
     }
+
+
+    /* =========================================
+       FORMULÁRIO
+       ========================================= */
 
     section#fale > div#formulario {
-        float: right;
-        width: 67%;
-        padding-bottom: 1rem;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        padding: 40px 50px;
     }
 
+
+    /* =========================================
+       TÍTULO
+       ========================================= */
+
+    div#formulario > h1 {
+
+        font-size: 2em;
+
+        margin: 0 0 30px;
+
+        color: var(--cor-terracota);
+    }
+
+
+    /* =========================================
+       FORMULÁRIO
+       ========================================= */
+
+    form#form-contato {
+
+        width: 100%;
+
+        gap: 14px;
+    }
+
+
+    /* =========================================
+       CAMPOS
+       ========================================= */
+
+    form#form-contato > input:not([type="submit"]),
+    form#form-contato > textarea {
+
+        padding: 14px;
+
+        font-size: 1em;
+
+        border-radius: 7px;
+    }
+
+
+    /* =========================================
+       TEXTAREA
+       ========================================= */
+
+    form#form-contato > textarea {
+
+        min-height: 170px;
+    }
+
+
+    /* =========================================
+       BOTÃO
+       ========================================= */
+
+    form#form-contato > input[type="submit"] {
+
+        width: 35%;
+
+        height: 42px;
+
+        margin-top: 12px;
+
+        font-size: 1em;
+    }
+
+
+    /* =========================================
+       STATUS
+       ========================================= */
+
+    p#status {
+
+        margin-top: 15px;
+
+        font-size: .95em;
+    }
 
 
 
