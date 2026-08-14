@@ -265,7 +265,7 @@ a:hover {
 }
 
 
-
+/*
 
 #paralax {
 
@@ -282,13 +282,52 @@ a:hover {
     background-position: center top;
     width: 100vw;
     margin-bottom: 2px;
-    transition: .6s;
-
-    
-    
+    transition: .6s;    
     
 
 }
+
+*/
+
+/* teste IA abaixo*/
+
+#paralax {
+    position: relative;
+    isolation: isolate;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url(../imagens/paralaxmovel.webp);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center top;
+
+    height: 870px;
+    width: 100vw;
+
+    margin-bottom: 2px;
+}
+
+/* camada sobre a imagem */
+#paralax::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(0, 0, 0, 0.15) 0%,
+            rgba(0, 0, 0, 0.35) 55%,
+            rgba(0, 0, 0, 0.75) 100%
+        );
+
+    z-index: -1;
+}
+
+/*
 
    .itemParalax {
 
@@ -320,6 +359,92 @@ a:hover {
    
     padding: 40px;
     margin: 10px;
+}
+    */
+
+    .itemParalax {
+    position: relative;
+
+    text-align: center;
+
+    font-family: var(--fonte-destaque);
+    font-size: clamp(2.2rem, 5vw, 4.5rem);
+    font-weight: normal;
+
+    letter-spacing: .35em;
+
+    background: linear-gradient(
+        110deg,
+        #A6615B,
+        #f3d1cc,
+        #9f5c56,
+        #A6615B
+    );
+
+    background-size: 200% auto;
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    animation: brilhoTexto 5s linear infinite;
+
+    padding: 25px 40px;
+}
+
+.itemParalax::before,
+.itemParalax::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 80px;
+    height: 1px;
+
+    background: rgba(232, 183, 177, 0.5);
+}
+
+.itemParalax::before {
+    right: 100%;
+    margin-right: 20px;
+}
+
+.itemParalax::after {
+    left: 100%;
+    margin-left: 20px;
+}
+
+@keyframes brilhoTexto {
+    0% {
+        background-position: 200% center;
+    }
+
+    100% {
+        background-position: -200% center;
+    }
+}
+
+#paralax::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background: radial-gradient(
+        ellipse at center,
+        transparent 35%,
+        rgba(0, 0, 0, 0.45) 100%
+    );
+
+    pointer-events: none;
+}
+
+.itemParalax {
+    transition:
+        transform .5s ease,
+        filter .5s ease;
+}
+
+.itemParalax:hover {
+    transform: scale(1.04);
+    filter: drop-shadow(0 0 18px rgba(166, 97, 91, .35));
 }
 
 
