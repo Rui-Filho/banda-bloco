@@ -80,44 +80,67 @@ body {
 
 }
 
-/* ===========================
+
+
+/*
    HEADER
-=========================== */
+   
+   */
 
-header {
-    /*deixar o header fixo*/
+
+
+header {   
+    
+    
     position: fixed;
+
     top: 0;
+
     left: 0;
+
     width: 100%;
+
     z-index: 9999;
+     
 
-    background-color:var(--cor-blackFosco);   
+    background: rgba(21, 20, 20, .94);
+
+    backdrop-filter: blur(10px);
+
+    -webkit-backdrop-filter: blur(10px);
     
-    
-    
-    width: 100vw;
     padding: 0px;
-    margin: 0px;
-    height: 60px;
-    border-bottom: solid 1px var(--cor-terracota);
-    gap: 10px;
 
-    /*alinhar os itens e centralizar horizontal e vertical*/
-    display:flex;    
-    justify-content: space-around;
-    align-items: center;
+    margin: 0px;
+
+    height: 68px;
+
+    border-bottom: 1px solid rgba(166, 97, 91, .35);
+
+    gap: 16px;
+    
+    display:flex;   
+
+    justify-content: flex-start;
+
+    align-items: center;   
    
 }
 
 
 
 header > a > img {
-    display: flexbox;      
-    max-width:40px;
+        
+    width:44px;
+
+    height: 44px;
+
     padding: 0px;
+
     margin: 0px;
+
     aspect-ratio: 1/1;
+
     object-fit: contain;
 }
 
@@ -125,12 +148,22 @@ header > a > img {
 
 
 header > h1 {
+
     color: var(--cor-terracota);
+
     font-family: var(--fonte-destaque);
+
     margin-bottom: 1px; 
-    padding-left: 10px;   
-    font-size: 1.3em;
-    font-weight: lighter;
+
+    padding-left: 10px; 
+
+    font-size: 1.35rem;
+
+    font-weight: 400;
+
+    letter-spacing: .12em ;
+    
+    
     
   
     
@@ -138,14 +171,35 @@ header > h1 {
     
 }
 
-.img4top {  
+.img4top {    
     
     
+    width: 17px; 
+
+    height: 17px; 
+
+    padding: 6px;
+
+    opacity: .75;
+
+    transition:.3s ease ;
     
-    max-width: 15px;      
-    padding: 5px;
     
-    
+}
+
+.img4top:hover {
+
+    opacity: 1;
+
+    transform: translateY(-2px);
+}
+
+.redestop {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin-left: auto;
+    margin-right: 15px;
 }
 
 /* ===========================
@@ -153,16 +207,35 @@ header > h1 {
 =========================== */
 
 .menu-btn {
-    font-size:30px;
-    padding-right: 15px;
-    background: none;
-    border: none;
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0;
+
+    background: transparent;
+
+    border: 1px solid rgba(166, 97, 91, .4);
+
+    border-radius: 50%;
+
+    color: var(--cor-terracota);
+
+    font-size: 20px;
+
     cursor: pointer;
-    color: var(--cor-terracota); 
-    gap: 10px;     
-     
-    transition: .5s;
-    
+
+    transition: .3s ease;
+}
+
+.menu-btn:hover {
+
+    background-color: rgba(166, 97, 91, .12);
+
+    border-color: var(--cor-terracota);
 }
 
 
@@ -171,6 +244,7 @@ header > h1 {
     display: flex;
     transition: .5s;
 }
+
 
 /* ===========================
    SEÇÃO DE CAPA
@@ -191,37 +265,58 @@ nav#menu {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 9999;
+    z-index: 9999;    
     
-    
-    background-color: #9f5c56;
+   background-color: var(--cor-terracota); 
     
     width: 100%;
-    padding: 20px 1px;
-    height: 125px;
+
+    padding: 20px 10px 25px;    
+
     text-align: center;
+
     font-weight: bolder;
     
     transition-duration: 0.5s;
+
     font-family: var(--fonte-destaque);
-    border-radius: 2px;    
-    transition: 0.3s;
-    padding-bottom: 85px; 
+
+    border-radius: 0 0 12px 12px;   
+
+    transition: 0.3s;  
     
     
 }
 
 nav#menu a {
+
+    display: inline-block;
+    padding: 7px 14px;
+    border-radius: 20px;
+    transition: .25s ease;
+}
+
+nav#menu a:hover {
+
+    background-color: rgba(13, 13, 13, .15);
+
     color: var(--cor-black);
+
+    transform: translateY(-1px);
+}
+
+nav#menu i {
+    margin-right: 6px;
+    opacity: .75;
 }
 
 nav#menu > ul > li{
     
-    padding: 1px;
-    margin-bottom: 6px;
+    padding: 3px;
+    margin-bottom: 8px;
     font-size: 0.7em;
     font-weight: bolder;
-    letter-spacing: .2em;
+    letter-spacing: .15em;
     text-decoration: none;
     list-style: none;  
     
@@ -265,31 +360,9 @@ a:hover {
 }
 
 
-/*
 
-#paralax {
 
-    display: flex;
-    justify-content: center;    
-    align-items: center;
-
-    background-color: var(--cor-black);
-    background-image: url(../imagens/paralaxmovel.webp);
-    background-size: cover;
-    background-attachment: fixed;  
-    background-position: center center;
-    height: 870px;
-    background-position: center top;
-    width: 100vw;
-    margin-bottom: 2px;
-    transition: .6s;    
-    
-
-}
-
-*/
-
-/* teste IA abaixo*/
+/* PARALAX */
 
 #paralax {
     position: relative;
@@ -327,40 +400,7 @@ a:hover {
     z-index: -1;
 }
 
-/*
 
-   .itemParalax {
-
-
-    flex: auto;    
-    text-align: center;
-    color:#A6615B ;     
-    
-    font-family: var(--fonte-destaque);
-    font-size: 2em;    
-    font-weight: normal;
-    letter-spacing: .3em;
-    
-    
-
-
-    background: linear-gradient(110deg,#A6615B,
-        #e8b7b1,
-        #9f5c56,
-        #A6615B);
-    background-size: 200% auto;
-
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-
-    animation: brilhoTexto 4s linear infinite;
-
-
-   
-    padding: 40px;
-    margin: 10px;
-}
-    */
 
     .itemParalax {
     position: relative;
@@ -472,7 +512,7 @@ a:hover {
 
 .carousel-item.active {
     display: block;
-    opacity: 0.1px;
+    opacity: .8;
     border: .11px solid var(--cor-terracota);
     width: 250px;    
     margin: auto;
@@ -615,7 +655,7 @@ main img.img2 {
     margin: auto;
     width: 300px;
     padding: 2px;
-    border: 1px solid (#A6615B);
+    border: 1px solid var(--cor-terracota);
     box-sizing: border-box;
     box-shadow: 0px 0px 0px 1px #A6615B;
     border-radius: 12px;
@@ -732,91 +772,7 @@ div.video > iframe {
 
 /* FALE CONOSCO*/
 
-/*
 
-div#faleconosco {
-    position: relative;
-    font-family: var(--fonte-padrao),system-ui,Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background-color: var(--cor-blackFosco);
-    box-sizing: border-box;
-    min-width: 300px;
-    max-width: 700px;
-    height: 78vh;
-    margin-bottom: 100px;
-    padding-bottom: 2rem;
-    
-    
-    
-
-}
-
-section#fale {
-    margin: auto;
-    
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    overflow: hidden;
-    background-color: var(--cor-blackFosco);
-    width: 275px;
-    height: 580px;
-    border-radius: 20px;
-    box-shadow: 0px 0px 5px #A6615B;
-    transition: width 1s, height 1s;
-    transition-timing-function: ease;
-    padding-bottom: 2rem;
-    
-    
-
-}
-
-section#fale > div#imagem {
-    display: block;        
-    height: 200px;
-    background-image: url(../imagens/pexels-maksgelatin-5605061.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-
-
-}
-
-section#fale > div#formulario {
-    display: block;
-    padding: 10px;    
-
-    height: 100%;
-    padding-bottom: 1rem;
-
-
-}
-
-
-
-div#formulario > h1 {
-    font-size: .9em;
-    text-align: center;
-    padding: 5px;
-    font-family: var(--fonte-destaque);
-    color: var(--cor-terracota);
-    font-weight: lighter;
-}
-
-section#fale > div#formulario input{
-    padding: 1px;
-    font-size: .9em;
-    border-radius: 5px;
-    font-family: var(--fonte-padrao);
-    
-}
-section#fale > div#formulario textarea{
-    font-family: var(--fonte-padrao);
-    font-size: .9em;
-}
-
-*/
 
 /* Testando sugestões IA - Abaixo*/
 
@@ -1050,74 +1006,7 @@ p#status {
 
 /*  Testando sugestoes IA - FIM  */
 
-/*form#form-contato > input[type=submit] {
-    display: block;
-    margin: auto;
-    font-size: 1em;
-    width: 50%;
-    height: 30px;
-    
-    color: var(--cor-terracota);
-    border: solid 2px #A6615B ;
-    
-    margin-bottom: 7px;
-    
-    cursor: pointer;
 
-    
-    background: var(--cor-black);
-    
-    font-weight: 470;
-    transition: transform 0.2s ease;
-
-}
-
-form#form-contato > input[type=submit]:hover{
-    background-color: #A6615B;
-    transition: 1s;
-    color: var(--cor-black);
-    width: 52%;
-    
-
-}
-
-
-
-form#form-contato > input {
-    width: 100%;
-    margin: 2px;
-
-    background:var(--cor-blackFosco);
-    border: 1px solid #A6615B;
-    color: #84878C;
-    border-radius: 8px;
-    padding: 12px;
-
-}
-
-form#form-contato > textarea {
-    margin: 2px;
-    width: 100%;
-    background: var(--cor-blackFosco);
-    border: 1px solid #A6615B;
-    color: #84878C;
-    border-radius: 8px;
-    
-}
-form#form-contato > input:focus,textarea:focus {
-    border-color: #59201B;
-    outline: none;
-
-}
-
-p#status {
-    color: #E6EAF0;
-    font-family: var(--fonte-padrao);
-}
-
-
-    
-*/
 /* ===========================
    FOOTER
 =========================== */
