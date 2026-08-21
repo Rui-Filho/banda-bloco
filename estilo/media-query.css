@@ -29,8 +29,12 @@
         gap: 0;
     }
 
-}
+    .menu-btn {
+        margin-right: 17px;
+        flex-shrink: 0;
+    }
 
+}
 
 
 
