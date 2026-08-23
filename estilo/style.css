@@ -389,16 +389,20 @@ a:hover {
     position: absolute;
     inset: 0;
 
-    background:
-        linear-gradient(
-            180deg,
-            rgba(0, 0, 0, 0.15) 0%,
-            rgba(0, 0, 0, 0.35) 55%,
-            rgba(0, 0, 0, 0.75) 100%
-        );
+    background: 
+    linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.15) 0%,
+        rgba(0, 0, 0, 0.35) 55%,        
+        rgba(0, 0, 0, 0.75) 100%
+    );
 
     z-index: -1;
+
+    
+
 }
+
 
 
 
@@ -411,7 +415,7 @@ a:hover {
     font-size: clamp(2.2rem, 5vw, 4.5rem);
     font-weight: normal;
 
-    letter-spacing: .35em;
+    letter-spacing: .45em;
 
     background: linear-gradient(
         110deg,
@@ -568,10 +572,22 @@ main h1 {
     margin: 15px;
     font-size: .8em;
     text-align: center;
-    letter-spacing: .3em;
-    margin-bottom: 50px;
+    letter-spacing: .25em;
+    margin-bottom: 40px;   
     
-    
+}
+
+main h1::after {
+    content: "";
+    display: block;
+
+    width: 45px;
+    height: 1.2px;
+    opacity: .4;
+
+    margin: 12px auto 0;
+
+    background-color: var(--cor-terracota);
 }
 
 main h1 {
@@ -613,10 +629,12 @@ main p {
     margin: 15px;
     text-align: justify;
     text-indent: 15px;
-    line-height: 3em;
+    line-height: 2.3em;
     font-weight: lighter;
     font-size: .8em;
     font-family: var(--fonte-padrao);
+
+ 
 }
 
 main strong {
