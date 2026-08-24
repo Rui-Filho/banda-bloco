@@ -618,10 +618,10 @@ main h3 {
     color: var(--cor-white);
     font-family: var(--fonte-padrao);
     font-size: .8em;
-    font-weight: normal;
+    font-weight: 200;
     text-align: center;
     margin: 20px 0;
-    letter-spacing: .1em;
+    letter-spacing: .08em;
 }
 
 main p {
@@ -668,6 +668,8 @@ main a:hover {
 }
 
 
+/* Discografia */
+
 main img.img2 {
     display: block;
     margin: auto;
@@ -675,15 +677,16 @@ main img.img2 {
     padding: 2px;
     border: 1px solid var(--cor-terracota);
     box-sizing: border-box;
-    box-shadow: 0px 0px 0px 1px #A6615B;
-    border-radius: 12px;
-    transition: 2s;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, .35);
+    border-radius: 16px;
+    transition: .35s ease;
 }
 
 main img.img2:hover{
-    border: 2px solid #9f5c56;
-    
+
+    border: 2px solid #9f5c56;    
     box-sizing: border-box;
+    transform: translateY(-4px);
     
 
 }
@@ -701,6 +704,7 @@ div.video {
     padding: 20px;
     position: relative;
     padding-bottom: 59%;
+    gap: 25px;
 }
 
 div.video > iframe {
@@ -709,7 +713,9 @@ div.video > iframe {
     left: 5%;
     width: 90%;
     height: 90%;
-    border-radius: 20px;
+    border-radius: 12px;
+    border: 1px solid var(--cor-terracota);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, .35);
     
 }
 
@@ -779,12 +785,31 @@ div.video > iframe {
 }
 
 .img4 {
-    max-width: 32px;
+    max-width: 38px;
     display: flex;
     margin: auto;
     padding: 10px;
+    transition: .3s ease;
     
 }
+
+.redes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+    padding: 25px 0;
+    
+}
+
+.redes a:hover .img4 {
+    transform: translateY(-4px);
+    filter: brightness(1.15);
+}
+
+
 
 
 
