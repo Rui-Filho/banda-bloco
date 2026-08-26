@@ -1058,8 +1058,8 @@ footer {
     background-color: var(--cor-blackFosco);
     color: var(--cor-white);
     text-align: center;
-    font-size: 0.8em;
-    padding: 10px;
+    font-size: 0.75rem;
+    padding: 18px 10px;
     font-family: var(--fonte-destaque);
     letter-spacing: 1px;
     border-top: 1px solid var(--cor-terracota);
@@ -1069,10 +1069,11 @@ footer > p > a {
     color:var(--cor-terracota);
     font-weight: bolder;
     text-decoration: none;
+    transition: color .3s ease;
 }
 
 footer > p {
-    color: #A6615B;
+    color:var(--cor-terracota);
 
 }
 
@@ -1080,7 +1081,8 @@ footer > p {
 
 footer > p > a:hover {
     
-    color:#E6EAF0;
-    font-size: .9em;
+    color:var(--cor-white);
+    font-size: 0.9em
+    
     
 }
