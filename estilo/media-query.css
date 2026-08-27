@@ -40,11 +40,58 @@
         flex-shrink: 0;
     }
 
+    main h1 {
+    padding-top: 110px;
+    }
+
+    #containerDisco {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    }
+
+    #itemDiscoBuzinas,
+    #itemDiscoBeleza {
+    width: 90%;
+    max-width: 380px;
+    }
+
+    .itemFoto:hover {
+    transform: none;
+    box-shadow: none;
+    }
+
+    .itemFoto {
+    width: 90px;
+    }
+
+    #conteinerVideos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+    }
+
+    .itemVideos {
+    width: 100%;
+    max-width: 500px;
+    padding: 5px;
+    box-sizing: border-box;
+    }
+
+    #paralax {
+    background-attachment: scroll;
+    }
+
+    
+
 }
 
 
 
-@media screen and (min-width: 600px)and (max-width:992px){
+@media screen and (min-width: 601px)and (max-width:992px){
 
 
 
@@ -55,7 +102,7 @@
 
     .redestop {
         margin-right: 10px;
-        gap: 0;
+        gap: 4px;
     }
 
     .img4top {
@@ -70,22 +117,51 @@
     }
 
 
-    
+    #containerDisco {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    }   
 
    
 
     .carousel-item.active {
         width: 400px;
+        transition: transform .3s ease;
     }
 
     .carousel-item.active:hover{
-        width: 430px;
+        transform: translateY(-4px);
     }
 
 
     main {
         width: 100%;
     }
+
+    
+
+        #itemDiscoBuzinas,
+        #itemDiscoBeleza {
+            width: min(80%, 420px);
+            }
+
+
+    #conteinerVideos {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    }
+
+    .itemVideos {
+    flex: 1 1 350px;
+    max-width: 450px;
+    padding: 10px;
+        }
 
      /* =========================================
        FALE CONOSCO - TABLET
@@ -204,16 +280,6 @@
 
 
 
-
-#containerFotos {
-    padding: 10px;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    align-items: center;
-    
-}
-
 .itemFoto {
     padding: 5px;
     border-radius: 10px;
@@ -229,14 +295,7 @@
 
 }
 
-#textoPrincipal {
 
-
-    column-count: 2;
-    column-gap: 50px;
-    column-rule: 1px solid #84878C;
-    text-align: justify;
-}
 
 #textoPrincipal::first-letter {
     font-size: 2em;
@@ -252,45 +311,13 @@
     }
 
     /* Flexibox na Discografia*/
-#containerDisco {
-    
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    align-items: center;
-}
-
-#itemDiscoBuzinas {
-    
-    width: 500px;
-    height: 670px;
-    
-}
-
-#itemDiscoBeleza {
-
-    
-    width: 500px;
-    
-}
-
-#conteinerVideos {
-    display: flex;
-    flex-flow: row wrap;
-    
-    padding: 20px;
 
 
-}
 
-.itemVideos {
 
-    
-    padding: 20px;
-    width: 300px;
-    flex: auto;
 
-}
+
+
 
   /* =========================================
        FALE CONOSCO - TRANSIÇÃO PARA DESKTOP
@@ -419,7 +446,7 @@
     
     width: 100%;
     padding: 20px 1px;
-    height: 5%;
+    height: auto;
     text-align: center;
     font-weight: bolder;
     
@@ -464,8 +491,8 @@ header {
 
   -webkit-backdrop-filter: blur(10px);
      
-  width: 100vw;  
-  height: 7%;   
+  width: 100%;  
+  height: 60px;   
     
  display: flex;
  justify-content: space-between;
@@ -524,7 +551,7 @@ a:hover {
 
     height: 900px;
     background-position: center top;
-    width: 100vw;
+    width: 100%;
     margin-bottom: 2px;
     
     

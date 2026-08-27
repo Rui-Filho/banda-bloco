@@ -522,13 +522,13 @@ a:hover {
     margin: auto;
     cursor: pointer;
     border-radius: 8px;  
-    transition: 1s;
+    transition: transform .3s ease;
     
     
 }
 
 .carousel-item.active:hover {
-    width: 320px;
+    transform: translateY(-4px);
     
 
 }
@@ -785,7 +785,7 @@ div.video > iframe {
 }
 
 .img4 {
-    max-width: 38px;
+    max-width: 30px;
     display: flex;
     margin: auto;
     padding: 10px;
