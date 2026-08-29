@@ -137,6 +137,8 @@
     align-items: center;
     gap: 20px;
     flex-wrap: nowrap;
+    margin-left: 0;
+    padding: 20px 0px 100px 0px;
 }
 
     
