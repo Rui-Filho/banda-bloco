@@ -19,6 +19,56 @@
 
 @media screen and (max-width: 600px) {
 
+    a:hover {
+    font-size: inherit;
+    }
+
+    div#video > iframe {
+    width: 100%;
+    max-width: 100%;
+    }
+
+    
+
+    div.itemParalax {
+    font-size: 1.8em;
+    padding: 25px 20px;
+    }
+
+    div.itemParalax:hover {
+    font-size: 1.8em;
+    }
+
+    #textoPrincipal {
+    padding: 0 15px;
+    }
+
+
+    main h1 {
+    font-size: .9em;
+    }
+
+    
+
+    nav#menu {
+    height: auto;
+    padding: 20px 10px 25px;
+    }
+
+
+    nav#menu > ul > li {
+    font-size: 0.75em;
+    letter-spacing: .15em;
+    }
+
+    nav#menu a {
+    transition: color .25s ease;
+    }
+
+    nav#menu a:hover {
+    color: var(--cor-white);
+    }
+
     header {
         padding: 0 10px;
         gap: 6px;
@@ -274,152 +324,15 @@
 
 }
 
-@media screen and (min-width: 992px) and (max-width: 1000px) { 
 
 
 
 
-
-.itemFoto {
-    padding: 5px;
-    border-radius: 10px;
-    width: 100px;
-    flex: 1 1 160px;
-    transition: 0.3s;
-
-}
-.itemFoto:hover{
-    transform: scale(1.08)
-    translateY(-5px);
-    box-shadow: 0px 10px 20px rgba(0,0,0,0.4);
-
-}
-
-
-
-#textoPrincipal::first-letter {
-    font-size: 2em;
-    font-weight: bold;
-
-}
+@media screen and (min-width:993px) {
 
 
 
 
-    main {
-        width: 100%;
-    }
-
-    /* Flexibox na Discografia*/
-
-
-
-
-
-
-
-
-  /* =========================================
-       FALE CONOSCO - TRANSIÇÃO PARA DESKTOP
-       ========================================= */
-
-    section#fale {
-        width: 70%;
-        margin: 35px auto;
-
-        border-radius: 12px;
-    }
-
-
-    /* =========================================
-       IMAGEM
-       ========================================= */
-
-    section#fale > div#imagem {
-        height: 280px;
-
-        background-position: center center;
-        background-size: cover;
-    }
-
-
-    /* =========================================
-       FORMULÁRIO
-       ========================================= */
-
-    section#fale > div#formulario {
-        padding: 25px 45px 35px;
-    }
-
-
-    /* =========================================
-       TÍTULO
-       ========================================= */
-
-    div#formulario > h1 {
-        font-size: 1.8em;
-
-        margin: 5px 0 25px;
-    }
-
-
-    /* =========================================
-       CAMPOS
-       ========================================= */
-
-    form#form-contato {
-        gap: 12px;
-    }
-
-
-    form#form-contato > input:not([type="submit"]),
-    form#form-contato > textarea {
-
-        padding: 13px;
-
-        font-size: .95em;
-
-        border-radius: 7px;
-    }
-
-
-    /* =========================================
-       TEXTAREA
-       ========================================= */
-
-    form#form-contato > textarea {
-        min-height: 160px;
-    }
-
-
-    /* =========================================
-       BOTÃO
-       ========================================= */
-
-    form#form-contato > input[type="submit"] {
-
-        width: 35%;
-        height: 40px;
-
-        margin-top: 10px;
-
-        font-size: .95em;
-    }
-
-
-    /* =========================================
-       STATUS
-       ========================================= */
-
-    p#status {
-        font-size: .95em;
-    }
-}
-
-
-
-
-@media screen and (min-width:1000px) {
 
 
     .itemParalax {
@@ -646,7 +559,7 @@ main {
 }
 
 main h1 {
-    padding-top: 140px;
+    padding-top: 180px;
 }
 
 main h2#video {
@@ -683,6 +596,7 @@ nav#menu ul {
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
+    
 }
 
 #itemDiscoBuzinas {
