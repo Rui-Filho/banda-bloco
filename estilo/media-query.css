@@ -45,7 +45,8 @@
 
 
     main h1 {
-    font-size: .9em;
+        padding-top: 110px;
+        font-size: .7em;
     }
 
     
@@ -90,9 +91,7 @@
         flex-shrink: 0;
     }
 
-    main h1 {
-    padding-top: 110px;
-    }
+
 
     #containerDisco {
     display: flex;
@@ -104,12 +103,9 @@
     #itemDiscoBuzinas,
     #itemDiscoBeleza {
     width: 90%;
-    max-width: 380px;
-    }
-
-    .itemFoto:hover {
     transform: none;
     box-shadow: none;
+    height: auto;
     }
 
     .itemFoto {
@@ -134,6 +130,14 @@
     #paralax {
     background-attachment: scroll;
     }
+
+    .redes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: nowrap;
+}
 
     
 
@@ -530,7 +534,6 @@ div.itemParalax{
 
 #textoPrincipal {
 
-
     column-count: 2;
     column-gap: 50px;
     column-rule: 1px solid #84878C;
@@ -540,7 +543,6 @@ div.itemParalax{
 #textoPrincipal::first-letter {
     font-size: 2em;
     font-weight: bold;
-
 }
 
 
