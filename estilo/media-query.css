@@ -113,7 +113,7 @@
     #itemDiscoBeleza {
     width: 90%;
     transform: none;
-    box-shadow: none;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, .30);
     height: auto;
     }
 
@@ -624,7 +624,8 @@ div.so {
     
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 40px;
     align-items: center;
     
     
@@ -645,6 +646,11 @@ div.so {
     
     width: 500px;
     
+}
+
+#itemDiscoBuzinas,
+#itemDiscoBeleza {
+    max-width: 500px;
 }
 
 

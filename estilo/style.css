@@ -275,9 +275,8 @@ nav#menu {
 
     text-align: center;
 
-    font-weight: bolder;
+    font-weight: bolder;   
     
-    transition-duration: 0.5s;
 
     font-family: var(--fonte-destaque);
 
@@ -574,6 +573,12 @@ main h1 {
     letter-spacing: .25em;
     margin-bottom: 20px;   
     
+}
+
+main h1 i,
+main h2 i {
+    margin-right: 8px;
+    font-size: .85em;
 }
 
 main h1::after {
