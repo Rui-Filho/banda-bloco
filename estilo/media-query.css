@@ -137,8 +137,8 @@
     align-items: center;
     gap: 20px;
     flex-wrap: nowrap;
-    margin: 180px;
-    padding: 30px;
+    margin: 80px;
+    padding: 20px  0px;
 }
 
    div.so {
@@ -598,6 +598,12 @@ nav#menu ul {
 
 
 /* Flexibox na Discografia*/
+
+div.so {
+    margin-bottom:50px ;
+   }
+
+
 #containerDisco {
     
     display: flex;
@@ -605,12 +611,14 @@ nav#menu ul {
     justify-content: space-between;
     align-items: center;
     
+    
+    
 }
 
 #itemDiscoBuzinas {
     
     width: 500px;
-    height: 675px;
+    
     
     
     
@@ -622,6 +630,8 @@ nav#menu ul {
     width: 500px;
     
 }
+
+
 
 #conteinerVideos {
     display: flex;
