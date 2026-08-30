@@ -60,14 +60,23 @@
     nav#menu > ul > li {
     font-size: 0.75em;
     letter-spacing: .15em;
+    padding: 2px 0;
+    margin-bottom: 7px;
+    }
+
+    nav#menu i {
+    margin-right: 6px;
     }
 
     nav#menu a {
+    display: inline-block;
+    padding: 4px 8px;
     transition: color .25s ease;
     }
 
     nav#menu a:hover {
     color: var(--cor-white);
+    font-size: inherit;
     }
 
     header {
@@ -142,8 +151,12 @@
 }
 
    div.so {
-    margin-bottom:200px ;
+    margin-bottom:230px ;
    }
+
+   .itemParalax:hover {
+    transform: translateY(-4px);
+    }
 
     
 
@@ -345,14 +358,10 @@
 
 
 
-    .itemParalax {
-        font-size: 4em;
-        transition: 2s;
-    }
+   
 
     .itemParalax:hover {
-        font-size: 3.5em;
-        
+    transform: translateY(-4px);
     }
 
 
@@ -484,11 +493,12 @@ a:hover {
 
 }
 
+
+
 div.itemParalax{
     
     
-    color:#A6615B; 
-    
+    color:#A6615B;     
     
     
     font-family:  var(--fonte-destaque);
@@ -499,7 +509,14 @@ div.itemParalax{
     
     padding: 40px;
     margin: 0;
+
+    transition: transform .4s ease, box-shadow .4s ease;
     
+}
+
+div.itemParalax:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, .35);
 }
 
 
@@ -527,14 +544,13 @@ div.itemParalax{
     border-radius: 25px;
     width: 110px;
     flex:  150px 100px;
-    transition: transform, 1s;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
 
 }
-.itemFoto:hover{
-    transform: scale(2)
-    translateY(-7px);
-    box-shadow: 0px 10px 20px rgba(0,0,0,0.4);
 
+.itemFoto:hover {
+    transform: scale(1.12) translateY(-6px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.45);
 }
 
 
@@ -633,24 +649,24 @@ div.so {
 
 
 
+
+
+
 #conteinerVideos {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    
+    gap: 25px;
     padding: 20px;
 
-
+    
 }
 
 .itemVideos {
-
-    
-    padding: 20px;
-    
+    padding: 10px;
     flex: 1 1 350px;
-
+    max-width: 580px;
 }
 
 
@@ -667,8 +683,11 @@ a.fontnav {
 
 
 
-div#video > iframe{
-    width: 20%;
+div#video > iframe {
+    width: 100%;
+    max-width: 560px;
+    aspect-ratio: 16 / 9;
+    border: 0;
 }
 
 
