@@ -244,8 +244,8 @@
     /* Container principal */
 
     section#fale {
-        width: 60%;
-        margin: 30px auto;
+        width: 50%;
+        margin: 10px auto;
 
         border-radius: 12px;
     }
@@ -704,14 +704,18 @@ a {
     section#fale {
 
         display: grid;
-        grid-template-columns: 45% 55%;
+
+        grid-template-columns: 40% 60%;
 
         width: 70%;
-        max-width: 900px;
+
+        max-width: 800px;
+
+        max-height: 700px;
 
         margin: 40px auto;
 
-        border-radius: 12px;
+        border-radius: 18px;
 
         overflow: hidden;
 
@@ -727,7 +731,7 @@ a {
     section#fale > div#imagem {
 
         height: 100%;
-        min-height: 400px;
+        min-height: 300px;
 
         background-position: center;
         background-size: cover;
