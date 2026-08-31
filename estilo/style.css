@@ -75,7 +75,7 @@ body {
     
     margin: 0px;
     padding: 0px;
-    overflow: hidden;
+    
 
 
 }
@@ -743,7 +743,7 @@ div.video > iframe {
     font-family: var(--fonte-padrao);
     color: var(--cor-terracota);
     font-size: .7em;    
-    width: 120px;
+    width: 130px;
     height: 20px;
     padding: 10px;
     margin: auto;       
@@ -1085,8 +1085,7 @@ footer > p {
 
 footer > p > a:hover {
     
-    color:var(--cor-white);
-    font-size: 0.9em
-    
+    color:var(--cor-white);   
+    font-size: .9em;    
     
 }

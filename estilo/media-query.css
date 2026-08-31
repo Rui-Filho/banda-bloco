@@ -76,7 +76,7 @@
 
     nav#menu a:hover {
     color: var(--cor-white);
-    font-size: inherit;
+    
     }
 
     header {
@@ -386,10 +386,8 @@
 
     backdrop-filter: blur(10px);
 
-    -webkit-backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);    
     
-    
-    transition-duration: 0.5s;
     font-family: var(--fonte-destaque);
     border-radius: 1px;    
     transition: 0.3s;
@@ -453,8 +451,7 @@ header > h1 {
 a:hover {
     
     color: var(--cor-black);    
-    transition: .9s;
-    font-size: .9em;
+    
     
 }
 
@@ -473,21 +470,15 @@ a:hover {
 
     display: flex;
     align-items: center;
-    justify-content: center;
-    
+    justify-content: center;    
     background-color: var(--cor-black);
     background-image: url(../imagens/paralaxdesktop.webp);
     background-size: cover;
-    background-attachment: fixed;    
-    background-position: center top;
-
+    background-attachment: fixed; 
     height: 900px;
     background-position: center top;
     width: 100%;
-    margin-bottom: 2px;
-    
-    
-    
+    margin-bottom: 2px;  
     
     
 
@@ -635,7 +626,7 @@ div.so {
 #itemDiscoBuzinas {
     
     width: 500px;
-    height: 710px;
+    height: 672px;
     
     
     
@@ -713,11 +704,11 @@ a {
 
         grid-template-columns: 40% 60%;
 
-        width: 70%;
+        width: 90%;
 
-        max-width: 800px;
+        max-width: 600px;
 
-        max-height: 700px;
+        max-height: 750px;
 
         margin: 40px auto;
 
@@ -737,7 +728,7 @@ a {
     section#fale > div#imagem {
 
         height: 100%;
-        min-height: 300px;
+        min-height: 200px;
 
         background-position: center;
         background-size: cover;
@@ -754,7 +745,7 @@ a {
         flex-direction: column;
         justify-content: center;
 
-        padding: 40px 50px;
+        padding: 10px 35px;
     }
 
 
@@ -766,7 +757,7 @@ a {
 
         font-size: 1.5em;
 
-        margin: 0 0 30px;
+        margin: 0 0 10px;
 
         color: var(--cor-terracota);
     }
@@ -778,7 +769,7 @@ a {
 
     form#form-contato {
 
-        width: 100%;
+        width: 95%;
 
         gap: 14px;
     }
