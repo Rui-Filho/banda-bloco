@@ -517,10 +517,10 @@ a:hover {
     display: block;
     opacity: .8;
     border: .11px solid var(--cor-terracota);
-    width: 250px;    
+    width: 200px;    
     margin: auto;
     cursor: pointer;
-    border-radius: 8px;  
+    border-radius: 10px;  
     transition: transform .3s ease;
     
     
@@ -677,7 +677,7 @@ main a:hover {
 main img.img2 {
     display: block;
     margin: auto;
-    width: 300px;
+    width: 250px;
     padding: 2px;
     border: 1px solid var(--cor-terracota);
     box-sizing: border-box;
@@ -743,7 +743,7 @@ div.video > iframe {
     font-family: var(--fonte-padrao);
     color: var(--cor-terracota);
     font-size: .7em;    
-    width: 130px;
+    width: 120px;
     height: 20px;
     padding: 10px;
     margin: auto;       
