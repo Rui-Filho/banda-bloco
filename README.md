@@ -1,5 +1,7 @@
 # 🎸 BLOCO — Site Oficial
 
+![Preview do site da BLOCO](preview.png)
+
 Site oficial da **BLOCO**, banda brasileira de rock alternativo autoral.
 
 O projeto foi desenvolvido com foco em identidade visual, apresentação do trabalho da banda, navegação intuitiva e adaptação para diferentes tamanhos de tela.
